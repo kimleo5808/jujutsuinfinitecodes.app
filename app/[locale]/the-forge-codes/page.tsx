@@ -19,11 +19,10 @@ export async function generateMetadata({
       "Get the latest the forge codes with active and expired status, timestamps, redeem steps, and transparent updates.",
     locale: locale as Locale,
     path: "/the-forge-codes",
-    canonicalUrl: "/",
+    canonicalUrl: "/the-forge-codes",
   });
 }
 
 export default function TheForgeCodesPage() {
   return <HomeComponent />;
 }
-

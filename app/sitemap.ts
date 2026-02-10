@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site'
 import { DEFAULT_LOCALE, LOCALES } from '@/i18n/routing'
+import { getPosts } from '@/lib/getBlogs'
 import { MetadataRoute } from 'next'
 
 const siteUrl = siteConfig.url
@@ -30,7 +31,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   })
 
+  const blogPages = (
+    await Promise.all(
+      LOCALES.map(async (locale) => {
+        const localePrefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`
+        const { posts } = await getPosts(locale)
+
+        const blogIndex = {
+          url: `${siteUrl}${localePrefix}/blog`,
+          lastModified: new Date(),
+          changeFrequency: 'daily' as ChangeFrequency,
+          priority: 0.7,
+        }
+
+        const postPages = posts
+          .filter(post => Boolean(post.slug))
+          .map(post => {
+            const normalizedSlug = post.slug.startsWith('/') ? post.slug : `/${post.slug}`
+            const postPath = normalizedSlug.startsWith('/blog/')
+              ? normalizedSlug
+              : `/blog${normalizedSlug}`
+
+            return {
+              url: `${siteUrl}${localePrefix}${postPath}`,
+              lastModified: post.date ? new Date(post.date) : new Date(),
+              changeFrequency: 'weekly' as ChangeFrequency,
+              priority: 0.6,
+            }
+          })
+
+        return [blogIndex, ...postPages]
+      })
+    )
+  ).flat()
+
   return [
     ...pages,
+    ...blogPages,
   ]
 }
