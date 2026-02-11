@@ -1,8 +1,35 @@
-import { forgeRedeemSteps, forgeTroubleshooting } from "@/lib/forge-data";
-import { Locale } from "@/i18n/routing";
+import MDXComponents from "@/components/mdx/MDXComponents";
+import { Locale, LOCALES } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";
-import { ChevronDown } from "lucide-react";
+import fs from "fs/promises";
 import { Metadata } from "next";
+import { MDXRemote } from "next-mdx-remote-client/rsc";
+import path from "path";
+import remarkGfm from "remark-gfm";
+
+const options = {
+  parseFrontmatter: true,
+  mdxOptions: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
+};
+
+async function getMDXContent(locale: string) {
+  const filePath = path.join(
+    process.cwd(),
+    "content",
+    "how-to-redeem-the-forge-codes",
+    `${locale}.mdx`
+  );
+  try {
+    const content = await fs.readFile(filePath, "utf-8");
+    return content;
+  } catch (error) {
+    console.error(`Error reading MDX file: ${error}`);
+    return "";
+  }
+}
 
 type Params = Promise<{ locale: string }>;
 
@@ -24,7 +51,14 @@ export async function generateMetadata({
   });
 }
 
-export default function RedeemGuidePage() {
+export default async function RedeemGuidePage({
+  params,
+}: {
+  params: Params;
+}) {
+  const { locale } = await params;
+  const content = await getMDXContent(locale);
+
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
       {/* Hero */}
@@ -35,63 +69,26 @@ export default function RedeemGuidePage() {
           How to Redeem Codes in The Forge
         </h1>
         <p className="relative mt-4 text-slate-700 dark:text-slate-300">
-          This guide answers both high-intent questions: how to redeem codes in
-          the forge and where to put codes in the forge. Use this checklist
-          before testing any the forge codes.
+          Complete 2026 guide covering how to redeem the forge codes on every
+          device, what rewards you get, troubleshooting common errors, and where
+          to find new codes.
         </p>
       </header>
 
-      {/* Step-by-step redeem flow */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
-        <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Step-by-step redeem flow
-        </h2>
-        <ol className="mt-6 grid gap-4 sm:grid-cols-2">
-          {forgeRedeemSteps.map((step, index) => (
-            <li
-              key={step.title}
-              className="rounded-xl border border-indigo-100 p-4 dark:border-indigo-900/50"
-            >
-              <div className="flex items-start gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-100 font-heading text-sm font-bold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300">
-                  {index + 1}
-                </span>
-                <div>
-                  <p className="font-semibold text-slate-900 dark:text-slate-100">
-                    {step.title}
-                  </p>
-                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-                    {step.detail}
-                  </p>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      {/* Troubleshooting accordion */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
-        <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Troubleshooting when the forge codes fail
-        </h2>
-        <div className="mt-6 space-y-3">
-          {forgeTroubleshooting.map((item) => (
-            <details
-              key={item.question}
-              className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
-            >
-              <summary className="flex cursor-pointer items-center justify-between gap-2 px-4 py-3 font-semibold text-slate-900 dark:text-slate-100 [&::-webkit-details-marker]:hidden">
-                {item.question}
-                <ChevronDown className="size-4 shrink-0 text-indigo-400 transition-transform group-open:rotate-180" />
-              </summary>
-              <div className="border-t border-indigo-50 px-4 py-3 text-sm text-slate-600 dark:border-indigo-900/30 dark:text-slate-300">
-                {item.answer}
-              </div>
-            </details>
-          ))}
-        </div>
-      </section>
+      {/* MDX Content */}
+      <article className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950 sm:p-8">
+        <MDXRemote
+          source={content}
+          components={MDXComponents}
+          options={options}
+        />
+      </article>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return LOCALES.map((locale) => ({
+    locale,
+  }));
 }
