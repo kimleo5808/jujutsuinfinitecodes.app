@@ -23,8 +23,8 @@ const HeaderLinks = () => {
           target={link.target || "_self"}
           rel={link.rel || undefined}
           className={cn(
-            "rounded-xl px-4 py-2 flex items-center gap-x-1 hover:bg-accent-foreground/10 hover:text-accent-foreground",
-            pathname === link.href && "font-semibold text-accent-foreground"
+            "rounded-xl px-4 py-2 flex items-center gap-x-1 transition-colors hover:bg-indigo-50 hover:text-indigo-700 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-300",
+            pathname === link.href && "font-semibold bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300"
           )}
         >
           {link.name}

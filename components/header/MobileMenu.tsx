@@ -46,7 +46,7 @@ export default function MobileMenu() {
                 width={32}
                 height={32}
               />
-              <span className="highlight-text">{t("title")}</span>
+              <span className="font-heading text-slate-900 dark:text-slate-100">{t("title")}</span>
             </I18nLink>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />

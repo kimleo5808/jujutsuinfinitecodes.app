@@ -1,7 +1,7 @@
+import SocialShare from "@/components/footer/SocialShare";
 import { siteConfig } from "@/config/site";
 import { Link as I18nLink } from "@/i18n/routing";
 import { FooterLink } from "@/types/common";
-import { GithubIcon, MailIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
@@ -15,41 +15,18 @@ export default async function Footer() {
     <footer className="mt-12 w-full border-t border-indigo-100 bg-slate-950 text-slate-300 dark:border-indigo-900/40">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-5 lg:px-8">
         <div className="lg:col-span-2">
-          <h2 className="text-2xl font-black text-white">{t("title")}</h2>
+          <h2 className="font-heading text-2xl font-black text-white">
+            {t("title")}
+          </h2>
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-300">
             {t("description")}
           </p>
-          <div className="mt-5 flex items-center gap-2">
-            {siteConfig.socialLinks?.github && (
-              <Link
-                href={siteConfig.socialLinks.github}
-                prefetch={false}
-                target="_blank"
-                rel="noreferrer nofollow noopener"
-                aria-label="GitHub"
-                title="View on GitHub"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-700 hover:bg-slate-800"
-              >
-                <GithubIcon className="size-4" />
-              </Link>
-            )}
-            {siteConfig.socialLinks?.email && (
-              <Link
-                href={`mailto:${siteConfig.socialLinks.email}`}
-                prefetch={false}
-                aria-label="Email"
-                title="Email"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-700 hover:bg-slate-800"
-              >
-                <MailIcon className="size-4" />
-              </Link>
-            )}
-          </div>
+          <SocialShare />
         </div>
 
         {footerLinks.map((section) => (
           <div key={section.title}>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-200">
+            <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-slate-200">
               {section.title}
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
@@ -98,7 +75,7 @@ export default async function Footer() {
               href="/privacy-policy"
               title={tFooter("PrivacyPolicy")}
               prefetch={false}
-              className="hover:text-white"
+              className="transition-colors hover:text-white"
             >
               {tFooter("PrivacyPolicy")}
             </I18nLink>
@@ -106,7 +83,7 @@ export default async function Footer() {
               href="/terms-of-service"
               title={tFooter("TermsOfService")}
               prefetch={false}
-              className="hover:text-white"
+              className="transition-colors hover:text-white"
             >
               {tFooter("TermsOfService")}
             </I18nLink>

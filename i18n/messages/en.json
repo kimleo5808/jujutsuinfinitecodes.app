@@ -70,11 +70,19 @@
           ]
         },
         {
-          "title": "Brand",
+          "title": "Legal & Info",
           "links": [
             {
               "href": "/about",
               "name": "About theforgecodes"
+            },
+            {
+              "href": "/privacy-policy",
+              "name": "Privacy Policy"
+            },
+            {
+              "href": "/terms-of-service",
+              "name": "Terms of Service"
             }
           ]
         }

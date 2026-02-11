@@ -3,9 +3,6 @@ import { SiteConfig } from "@/types/siteConfig";
 export const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://theforgecodes.app";
 
-const EMAIL_URL = "hello@theforgecodes.app";
-const GITHUB_URL = "https://github.com/weijunext/nextjs-starter";
-
 export const siteConfig: SiteConfig = {
   name: "theforgecodes",
   tagLine: "Daily verified The Forge Roblox code tracker",
@@ -19,10 +16,6 @@ export const siteConfig: SiteConfig = {
     },
   ],
   creator: "@theforgecodes",
-  socialLinks: {
-    github: GITHUB_URL,
-    email: EMAIL_URL,
-  },
   themeColors: [
     { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
     { media: "(prefers-color-scheme: dark)", color: "#020817" },
