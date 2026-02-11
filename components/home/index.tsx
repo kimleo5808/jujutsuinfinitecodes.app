@@ -193,7 +193,7 @@ export default async function HomeComponent() {
                   {t(`signalCards.${index}.label`)}
                 </p>
                 <p className="mt-1 font-heading text-3xl text-violet-600 dark:text-violet-400">
-                  {t(`signalCards.${index}.value`)}
+                  {index === 0 ? jujutsuSiteFacts.activeCount : t(`signalCards.${index}.value`)}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
                   {t(`signalCards.${index}.note`)}
