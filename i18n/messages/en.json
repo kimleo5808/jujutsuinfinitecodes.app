@@ -9,19 +9,19 @@
     "links": [
       {
         "name": "Live Codes",
-        "href": "/the-forge-codes"
+        "href": "/jujutsu-infinite-codes"
       },
       {
         "name": "Redeem Guide",
-        "href": "/how-to-redeem-the-forge-codes"
+        "href": "/how-to-redeem-jujutsu-infinite-codes"
       },
       {
         "name": "FAQ",
-        "href": "/the-forge-codes-faq"
+        "href": "/jujutsu-infinite-codes-faq"
       },
       {
         "name": "History",
-        "href": "/the-forge-codes-history"
+        "href": "/jujutsu-infinite-codes-history"
       }
     ]
   },
@@ -36,14 +36,14 @@
           "links": [
             {
               "href": "/",
-              "name": "The Forge Codes"
+              "name": "Jujutsu Infinite Codes"
             },
             {
-              "href": "/the-forge-codes",
+              "href": "/jujutsu-infinite-codes",
               "name": "Live Codes"
             },
             {
-              "href": "/the-forge-codes-history",
+              "href": "/jujutsu-infinite-codes-history",
               "name": "History"
             }
           ]
@@ -52,11 +52,11 @@
           "title": "Guides",
           "links": [
             {
-              "href": "/how-to-redeem-the-forge-codes",
+              "href": "/how-to-redeem-jujutsu-infinite-codes",
               "name": "How to Redeem"
             },
             {
-              "href": "/the-forge-codes-faq",
+              "href": "/jujutsu-infinite-codes-faq",
               "name": "FAQ"
             }
           ]
@@ -66,7 +66,7 @@
           "links": [
             {
               "href": "/about",
-              "name": "About theforgecodes"
+              "name": "About jujutsuinfinitecodes"
             },
             {
               "href": "/privacy-policy",
@@ -82,32 +82,32 @@
     }
   },
   "Home": {
-    "title": "The Forge Codes",
-    "tagLine": "Daily auto-collected The Forge Roblox code tracker",
-    "description": "Find active and expired the forge codes with daily auto-collected updates, timestamps, redeem steps, and troubleshooting."
+    "title": "Jujutsu Infinite Codes",
+    "tagLine": "Daily auto-collected Jujutsu Infinite Roblox code tracker",
+    "description": "Find active and expired jujutsu infinite codes with daily auto-collected updates, timestamps, redeem steps, and troubleshooting."
   },
   "Blog": {
     "title": "Updates",
-    "description": "Latest updates for The Forge code tracking"
+    "description": "Latest updates for Jujutsu Infinite code tracking"
   },
   "About": {
-    "title": "About theforgecodes",
-    "description": "How we verify the forge codes and maintain update transparency"
+    "title": "About jujutsuinfinitecodes",
+    "description": "How we verify jujutsu infinite codes and maintain update transparency"
   },
   "TermsOfService": {
     "title": "Terms of Service",
-    "description": "Terms of service for theforgecodes.app — usage rules, disclaimers, and acceptable use for our Roblox code tracking service."
+    "description": "Terms of service for jujutsuinfinitecodes.app — usage rules, disclaimers, and acceptable use for our Roblox code tracking service."
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",
-    "description": "Privacy policy for theforgecodes.app — what data we collect, how we use analytics, and your privacy rights."
+    "description": "Privacy policy for jujutsuinfinitecodes.app — what data we collect, how we use analytics, and your privacy rights."
   },
   "Showcase": {
     "title": "Related Resources",
-    "description": "Useful references for The Forge players and code trackers.",
+    "description": "Useful references for Jujutsu Infinite players and code trackers.",
     "visitSite": "Visit site"
   },
-  "ForgeSections": {
+  "JujutsuInfiniteSections": {
     "tableHeaders": {
       "code": "Code",
       "reward": "Reward",
@@ -131,50 +131,50 @@
     },
     "hero": {
       "lastVerified": "Last verified: {time}",
-      "heading": "The Forge Codes: Active, Expired, and Daily Auto-Collected Updates",
-      "description": "This is a live answer page for <b>the forge codes</b>. We auto-collect <b>the forge codes</b> from public sources every day, split active and expired status, and publish transparent logs so you can redeem faster with fewer failed attempts.",
+      "heading": "Jujutsu Infinite Codes: Active, Expired, and Daily Auto-Collected Updates",
+      "description": "This is a live answer page for <b>jujutsu infinite codes</b>. We auto-collect <b>jujutsu infinite codes</b> from public sources every day, split active and expired status, and publish transparent logs so you can redeem faster with fewer failed attempts.",
       "activeCodes": "Active codes",
       "expiredTracked": "Expired tracked",
       "relatedKeywords": "Related keywords",
       "avgMonthlyVolume": "Avg monthly volume",
-      "viewActiveBtn": "View active the forge codes",
-      "redeemGuideBtn": "How to redeem codes in the forge",
+      "viewActiveBtn": "View active jujutsu infinite codes",
+      "redeemGuideBtn": "How to redeem codes in jujutsu infinite",
       "disclaimer": "Codes are automatically aggregated from public sources and may expire quickly. Always verify in-game before relying on rewards."
     },
     "activeTable": {
-      "title": "Active The Forge Codes",
-      "description": "These are the current the forge working codes. Each row shows reward, status, and last tested timestamp."
+      "title": "Active Jujutsu Infinite Codes",
+      "description": "These are the current jujutsu infinite working codes. Each row shows reward, status, and last tested timestamp."
     },
     "expiredTable": {
-      "title": "Expired The Forge Codes",
-      "description": "We keep expired the forge codes visible so users do not waste time retrying old codes for the forge."
+      "title": "Expired Jujutsu Infinite Codes",
+      "description": "We keep expired jujutsu infinite codes visible so users do not waste time retrying old codes for jujutsu infinite."
     },
     "redeem": {
-      "title": "How to Redeem Codes in The Forge",
-      "description": "If you search where to put codes in the forge, use this exact flow. It works for the forge roblox codes on both desktop and mobile.",
+      "title": "How to Redeem Codes in Jujutsu Infinite",
+      "description": "If you search where to put codes in jujutsu infinite, use this exact flow. It works for jujutsu infinite roblox codes on both desktop and mobile.",
       "pcCaption": "PC: Open Settings and find the Codes input field",
       "mobileCaption": "Mobile: Tap Settings and enter your code"
     },
     "troubleshoot": {
-      "title": "Why The Forge Codes Are Not Working",
-      "description": "Most users searching the forge codes not working can fix the issue in under a minute with this checklist."
+      "title": "Why Jujutsu Infinite Codes Are Not Working",
+      "description": "Most users searching jujutsu infinite codes not working can fix the issue in under a minute with this checklist."
     },
     "updateLog": {
-      "title": "The Forge Codes Update Log",
+      "title": "Jujutsu Infinite Codes Update Log",
       "description": "Each event below documents how codes moved between active and expired based on automated source refreshes."
     },
     "faq": {
-      "title": "The Forge Codes FAQ",
-      "description": "This FAQ covers the most searched questions around the forge codes roblox, redeem flow, and expiration behavior."
+      "title": "Jujutsu Infinite Codes FAQ",
+      "description": "This FAQ covers the most searched questions around jujutsu infinite codes roblox, redeem flow, and expiration behavior."
     },
     "redeemSteps": [
       {
-        "title": "Open The Forge in Roblox",
+        "title": "Open Jujutsu Infinite in Roblox",
         "detail": "Launch the game on PC or mobile and wait until your character fully loads."
       },
       {
         "title": "Open the Codes panel",
-        "detail": "Find the reward or gift icon in the UI. This is where to put codes in the forge."
+        "detail": "Find the reward or gift icon in the UI. This is where to put codes in jujutsu infinite."
       },
       {
         "title": "Paste the code exactly",
@@ -187,77 +187,77 @@
     ],
     "troubleshootItems": [
       {
-        "question": "Why are the forge codes not working for me?",
+        "question": "Why are jujutsu infinite codes not working for me?",
         "answer": "Most failures come from expiration, wrong capitalization, or extra spaces when pasting."
       },
       {
         "question": "Can I redeem the same code twice?",
-        "answer": "No. Most the forge codes are one-time use per account and will fail after redemption."
+        "answer": "No. Most jujutsu infinite codes are one-time use per account and will fail after redemption."
       },
       {
-        "question": "How often do new codes for the forge appear?",
+        "question": "How often do new codes for jujutsu infinite appear?",
         "answer": "This site auto-collects updates from multiple public sources several times per day."
       },
       {
-        "question": "Do the forge roblox codes work on all devices?",
+        "question": "Do jujutsu infinite roblox codes work on all devices?",
         "answer": "Yes. The same code usually works on PC and mobile as long as your game build is current."
       }
     ],
     "faqItems": [
       {
-        "question": "What are the latest the forge codes right now?",
+        "question": "What are the latest jujutsu infinite codes right now?",
         "answer": "Use the active table at the top of the page. Codes are auto-collected from public sources and updated daily."
       },
       {
-        "question": "What is the difference between active and expired the forge codes?",
-        "answer": "Active codes are currently marked as working by source consensus. Expired the forge codes are repeatedly flagged as unavailable."
+        "question": "What is the difference between active and expired jujutsu infinite codes?",
+        "answer": "Active codes are currently marked as working by source consensus. Expired jujutsu infinite codes are repeatedly flagged as unavailable."
       },
       {
-        "question": "How to redeem codes in the forge quickly?",
+        "question": "How to redeem codes in jujutsu infinite quickly?",
         "answer": "Open the code menu, paste the exact code, and redeem. The redeem guide section shows each step."
       },
       {
-        "question": "Where to put codes in the forge?",
+        "question": "Where to put codes in jujutsu infinite?",
         "answer": "Enter them in the in-game codes box, not on Roblox catalog pages."
       },
       {
-        "question": "Why keep expired codes for the forge?",
+        "question": "Why keep expired codes for jujutsu infinite?",
         "answer": "Keeping expired entries prevents repeated failed attempts and keeps historical transparency."
       },
       {
-        "question": "How is this page different from other the forge codes roblox pages?",
+        "question": "How is this page different from other jujutsu infinite codes roblox pages?",
         "answer": "This page keeps a date-by-date snapshot archive and rolls updates from multiple sources into one feed."
       }
     ]
   },
-  "TheForgeCodes": {
-    "title": "The Forge Codes: Latest Active & Expired Auto-Collected List",
-    "description": "Get the latest the forge codes with auto-collected active and expired status, timestamps, redeem steps, and daily archive links."
+  "JujutsuInfiniteCodes": {
+    "title": "Jujutsu Infinite Codes: Latest Active & Expired Auto-Collected List",
+    "description": "Get the latest jujutsu infinite codes with auto-collected active and expired status, timestamps, redeem steps, and daily archive links."
   },
   "FAQ": {
-    "title": "The Forge Codes FAQ: Why Codes Fail and How to Fix",
-    "description": "Common questions about the forge codes roblox, including failed redemptions, expiration behavior, and redeem troubleshooting."
+    "title": "Jujutsu Infinite Codes FAQ: Why Codes Fail and How to Fix",
+    "description": "Common questions about jujutsu infinite codes roblox, including failed redemptions, expiration behavior, and redeem troubleshooting."
   },
   "History": {
-    "title": "The Forge Codes History: Daily Snapshot Archive and Code Timeline",
-    "description": "Browse every daily snapshot of the forge codes organized by month. Track when codes were added, expired, and compare changes across days."
+    "title": "Jujutsu Infinite Codes History: Daily Snapshot Archive and Code Timeline",
+    "description": "Browse every daily snapshot of jujutsu infinite codes organized by month. Track when codes were added, expired, and compare changes across days."
   },
   "RedeemGuide": {
-    "title": "How to Redeem Codes in The Forge (2026 Guide)",
-    "description": "Step-by-step guide for how to redeem codes in the forge and where to put codes in the forge across Roblox devices."
+    "title": "How to Redeem Codes in Jujutsu Infinite (2026 Guide)",
+    "description": "Step-by-step guide for how to redeem codes in jujutsu infinite and where to put codes in jujutsu infinite across Roblox devices."
   },
   "Month": {
-    "title": "The Forge Codes February 2026: Monthly Trend, Active Flow, and Archive",
-    "description": "Monthly report for The Forge codes in February 2026 with trend analysis, active and expired patterns, redeem usage guidance, and daily archive links."
+    "title": "Jujutsu Infinite Codes February 2026: Monthly Trend, Active Flow, and Archive",
+    "description": "Monthly report for Jujutsu Infinite codes in February 2026 with trend analysis, active and expired patterns, redeem usage guidance, and daily archive links."
   },
   "Daily": {
-    "title": "The Forge Codes ({date}): Daily Auto-Collected Snapshot",
-    "description": "Daily snapshot page for the forge codes with auto-collected active and expired lists, redeem guidance, and source coverage."
+    "title": "Jujutsu Infinite Codes ({date}): Daily Auto-Collected Snapshot",
+    "description": "Daily snapshot page for jujutsu infinite codes with auto-collected active and expired lists, redeem guidance, and source coverage."
   },
   "Submission": {
     "badge": "Updates",
     "title": "Submit a Source",
-    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
+    "description": "Share a reliable source for jujutsu infinite codes and we may add it to our verification queue.",
     "productNameLabel": "Source Name",
     "productNamePlaceholder": "Official Discord / Creator post",
     "productUrlLabel": "Source URL",
@@ -276,94 +276,90 @@
       "expired": "expired"
     },
     "hero": {
-      "openLiveHub": "Open Live The Forge Codes Hub",
+      "openLiveHub": "View All Active Codes",
       "browseHistory": "Browse Code History",
-      "title": "The Forge Codes Homepage: Daily-Updated Strategy, Trends, and Redemption Guidance",
-      "description1": "This homepage is designed to rank for <strong>the forge codes</strong> and help users act fast. It combines keyword insights, redemption guidance, troubleshooting logic, and direct links to live and historical pages so visitors can find <strong>the forge codes</strong> they need without guessing where to start.",
-      "description2": "If you only need the latest list, open the live hub first. If you want the full strategy behind <strong>the forge codes</strong>, keep reading this page. It was intentionally expanded to a long-form pillar so it can capture both quick-intent users and deep-research users from Google."
+      "title": "Jujutsu Infinite Codes — Free Spins, Rewards & Daily Updates",
+      "description1": "Get the latest working <strong>jujutsu infinite codes</strong> for free Spins, Yen, and boosts. We track codes from official sources daily and show exactly which ones are active and which have expired — so you can redeem fast without wasting time on dead codes.",
+      "description2": "Jujutsu Infinite is a Roblox game inspired by <strong>Jujutsu Kaisen</strong>. Use codes to spin for powerful Innate Techniques like Domain Expansion, Reverse Cursed Technique, and more. Bookmark this page and check back daily for new codes."
     },
     "quickPreview": {
-      "title": "Quick Active Preview",
-      "description": "Preview only. For full status, sources, and detailed updates, continue to the live <strong>the forge codes</strong> hub.",
-      "seeFullTables": "See full active and expired the forge codes tables"
+      "title": "Active Codes Right Now",
+      "description": "These codes are currently working. For full details and expired codes, visit the <strong>live codes hub</strong>.",
+      "seeFullTables": "See all active and expired codes →"
     },
     "snapshot": {
-      "title": "Operational Snapshot",
+      "title": "Code Tracker Stats",
       "activeCodes": "Active Codes",
       "expiredTracked": "Expired Tracked",
-      "latestSnapshot": "Latest Snapshot",
-      "avgSearch": "Avg Search"
+      "latestSnapshot": "Last Updated",
+      "avgSearch": "Monthly Searches"
     },
     "signalCards": [
-      { "label": "US Monthly Search", "value": "5.4K", "note": "Primary commercial region in your keyword screenshots." },
-      { "label": "Global Monthly Search", "value": "12.3K", "note": "Total head-term demand for the forge codes family." },
-      { "label": "Tracked Variations", "value": "141+", "note": "Strong synonym cluster such as the forge roblox codes." },
-      { "label": "Question Keywords", "value": "20+", "note": "Includes how to redeem, how to use, and where to put flows." }
+      { "label": "Active Codes", "value": "—", "note": "Currently redeemable codes for free Spins and rewards." },
+      { "label": "Total Tracked", "value": "60+", "note": "All codes ever released for Jujutsu Infinite on Roblox." },
+      { "label": "Updated Daily", "value": "3x", "note": "We check sources three times per day for new codes." },
+      { "label": "Reward Type", "value": "Spins", "note": "Most codes give Spins to roll for Innate Techniques." }
     ],
-    "crafting": {
-      "title": "What You Can Get With The Forge Codes",
-      "description": "The Forge codes unlock rerolls, luck totems, boosts, gems, and crafting advantages. Below is the in-game crafting interface where you can use your rewards."
-    },
     "faq": {
-      "title": "Homepage FAQ For The Forge Codes",
-      "description": "These quick answers summarize the most frequent decisions users make before redeeming <strong>the forge codes</strong>."
+      "title": "Frequently Asked Questions",
+      "description": "Quick answers to common questions about <strong>jujutsu infinite codes</strong> and how they work."
     },
     "faqItems": [
-      { "question": "Are these the forge codes guaranteed to work for every player?", "answer": "No code page can guarantee permanent validity. We publish the forge codes based on the latest collected signals, then move entries to expired when repeated checks fail." },
-      { "question": "How often should I check for new codes in the forge?", "answer": "Check at least once per day and after major game updates. The homepage and Recent Codes sidebar are designed for this quick repeat workflow." },
-      { "question": "What is the difference between the homepage and /the-forge-codes?", "answer": "The homepage is the long-form pillar and guidance layer. The /the-forge-codes page is the live operational list with deeper status tables and update logs." },
-      { "question": "Where do I find old the forge codes that stopped working?", "answer": "Use the history and date pages from the Recent Codes list. Keeping expired records prevents repeated failed attempts." },
-      { "question": "Do the forge roblox codes and the forge codes roblox mean different things?", "answer": "In practice they represent the same intent cluster. We cover both language variants to match how users search in the real world." },
-      { "question": "Can I rely only on one source for the forge codes?", "answer": "It is safer to use an aggregated source with timestamped updates. That is why this site keeps a daily snapshot system and visible recency indicators." }
+      { "question": "What do jujutsu infinite codes give you?", "answer": "Most codes give you free Spins, which let you roll for Innate Techniques (special abilities inspired by Jujutsu Kaisen). Some codes also give Yen (in-game currency), XP boosts, or event-exclusive rewards." },
+      { "question": "How often are new jujutsu infinite codes released?", "answer": "New codes typically drop during game updates, player count milestones (like 1M visits), holidays, and special events. Check this page daily or follow the official Discord for the fastest updates." },
+      { "question": "Do jujutsu infinite codes expire?", "answer": "Yes. Most codes are time-limited and can expire without warning. Some last a few days, others last through an entire update cycle. Always redeem codes as soon as you find them." },
+      { "question": "Can I use the same code twice?", "answer": "No. Each code can only be redeemed once per Roblox account. If you see an 'already redeemed' error, it means you have already claimed that code." },
+      { "question": "Why is my code not working?", "answer": "The most common reasons are: the code has expired, you already redeemed it, there is a typo or extra space, or the game needs an update. Check our FAQ page for detailed troubleshooting steps." },
+      { "question": "Where do I enter codes in Jujutsu Infinite?", "answer": "Open the game, look for the gift box or Twitter/X icon on the side menu, tap it to open the codes panel, paste your code, and hit Redeem. See our redeem guide for step-by-step instructions." }
     ],
     "sections": [
       {
-        "id": "the-forge-codes-2026",
-        "title": "The Forge Codes in 2026: Why This Keyword Matters",
+        "id": "what-are-jujutsu-infinite-codes",
+        "title": "What Are Jujutsu Infinite Codes?",
         "subsections": [
-          { "paragraphs": ["The forge codes is not a tiny niche phrase; it is a recurring intent cluster with clear user urgency. The headline query the forge codes has meaningful volume on its own, and the related variants the forge roblox codes, the forge codes roblox, codes for the forge, and new codes for the forge all sit close enough to be solved by one tightly structured content system. This is why the homepage acts as a ranking-ready pillar for the forge codes, summarizes the latest market signals, and funnels users into the live update pages without forcing extra clicks."] },
-          { "h3": "The Forge Roblox Codes and Related Search Variants", "paragraphs": ["The strongest takeaway from the keyword data is not only volume, but intent composition. Most terms around this query are informational with immediate action behavior. A user searching this term usually wants to redeem in the next minute. A user searching how to redeem codes in the forge is even closer to action. A user searching where to put codes in the forge is blocked by UI confusion and needs one exact answer. The right model is depth plus speed: prominent quick answers, then long-form support sections below.", "This keyword family has many lexical variants with similar intent. This matters because search engines often rotate which page wins for each variant, especially when one site uses only one phrase repeatedly without covering adjacent language. The homepage intentionally includes the forge codes, the forge roblox codes, the forge codes roblox, codes in the forge, new codes in the forge, and all codes in the forge in naturally placed headings and paragraphs. That pattern improves semantic coverage while keeping one canonical homepage URL as the topical anchor."] },
-          { "h3": "Why Fresh Codes for The Forge Outperform Static Lists", "paragraphs": ["Competition indicators imply that content freshness and internal authority both matter. Large domains can rank quickly with shorter pages, but a focused brand like theforgecodes can still compete by publishing clearer structure and better update hygiene. The homepage states verification timestamps, links to daily pages, and explains how the update cycle works. For the forge codes topic, users reward transparent recency. If they see when the list changed and where to check day-specific snapshots, they return. Returning users create repeat engagement signals that help the main page hold rankings longer."] }
+          { "paragraphs": ["Jujutsu Infinite is a popular Roblox game inspired by the anime Jujutsu Kaisen. Players can unlock powerful Innate Techniques — special abilities like Domain Expansion, Reverse Cursed Technique, and Cursed Speech — by using Spins. Codes are free gifts released by the developers that give you Spins and other rewards without spending Robux."] },
+          { "h3": "What Rewards Do Codes Give?", "paragraphs": ["The most common reward is Spins. Each Spin gives you a random chance to roll a new Innate Technique. Higher-rarity techniques are much harder to get, so every free Spin counts. Some codes also give Yen (the in-game currency used for upgrades), XP boosts for faster leveling, or limited-time event items that are only available during special occasions."] },
+          { "h3": "Why Are Codes Important for New Players?", "paragraphs": ["If you are just starting Jujutsu Infinite, codes are the fastest way to get a strong Innate Technique without grinding. A good Innate can completely change your gameplay experience — some techniques let you dominate in PvP, while others are better for PvE boss fights. Redeeming all active codes on day one gives you the best possible head start."] }
         ]
       },
       {
-        "id": "how-to-redeem-codes-in-the-forge",
-        "title": "How to Redeem Codes in The Forge",
+        "id": "how-to-redeem-codes-in-jujutsu-infinite",
+        "title": "How to Redeem Codes in Jujutsu Infinite",
         "subsections": [
-          { "paragraphs": ["The phrase how to redeem codes in the forge is a high-intent query cluster. The short answer is direct: open Roblox The Forge, find the in-game codes entry panel, paste one code exactly as shown, and redeem before it expires. The long answer needs failure safeguards. Tell users to avoid extra spaces, preserve capitalization, and redeem the newest code first to validate that their account and session are healthy. If the first high-confidence code fails, the issue is usually game version mismatch or UI location confusion rather than code status."] },
-          { "h3": "How to Enter Codes in The Forge Step by Step", "paragraphs": ["To avoid cannibalization, the homepage and the /the-forge-codes hub serve different jobs. The homepage is the strategic pillar: it explains the search landscape, teaches the redeem workflow, answers common failures, and routes users to live snapshots. The /the-forge-codes URL remains the operational list page with complete active and expired tables, timeline rows, and deep archives. When someone lands on the homepage from the forge codes query, the above-the-fold area should solve three questions fast: are there active codes now, when was the latest check, and where can I see today's detailed page."] },
-          { "h3": "Where to Put Codes in The Forge", "paragraphs": ["The phrase where to put codes in the forge deserves explicit visual language because this is where many first-time players fail. The exact target is the in-game redemption field, not Roblox catalog search, not group walls, and not off-site claim forms. Common UI labels include the gift icon or codes button. If the field does not appear after updates, rejoin a server. A section that solves where to put codes in the forge captures frustrated traffic that otherwise bounces to multiple competitor pages before finding one clear instruction."] },
-          { "h3": "How to Use Codes in The Forge for Rerolls and Rewards", "paragraphs": ["The phrase how to use codes in the forge sounds similar to how to redeem, but users asking it often want outcome context rather than only UI steps. Codes can unlock spins, resources, progression boosts, or event rewards depending on current game patches. Usage timing matters: new codes in the forge are usually most reliable right after update windows, then degrade as players redeem and events close. By explicitly connecting new entries to practical reward timing, the homepage becomes more helpful than pages that only repeat static lists without teaching when to act."] }
+          { "paragraphs": ["Redeeming codes in Jujutsu Infinite takes less than 30 seconds. Open the game on Roblox, wait for your character to fully load, then look for the gift box icon or Twitter/X icon on the left side of your screen. Tap it to open the codes panel, paste your code exactly as shown, and press the Redeem button. Your reward will appear instantly."] },
+          { "h3": "Step-by-Step Instructions", "paragraphs": ["1. Launch Jujutsu Infinite on Roblox (PC, mobile, or Xbox). 2. Wait until your character fully loads into the game world. 3. Find and tap the codes icon on the side menu (gift box or Twitter/X icon). 4. Type or paste the code exactly — codes are case-sensitive. 5. Press the Redeem or Claim button. 6. Check your inventory for the reward."] },
+          { "h3": "Where to Put Codes in Jujutsu Infinite", "paragraphs": ["The code input field is inside the game itself, not on the Roblox website or catalog. Look for a small icon on the left side of your screen after your character loads. If the icon is not visible, try rejoining the server or updating your Roblox app. The codes panel only appears after the game UI is fully loaded."] },
+          { "h3": "Tips for Successful Redemption", "paragraphs": ["Always copy and paste codes instead of typing them manually to avoid typos. Make sure there are no extra spaces before or after the code. On mobile, watch out for auto-correct changing your code text. If a code fails on the first try, clear the input field completely and try again. Test a known working code first to make sure your session is connected properly."] }
         ]
       },
       {
-        "id": "why-are-the-forge-codes-not-working",
-        "title": "Why Are The Forge Codes Not Working?",
+        "id": "why-are-jujutsu-infinite-codes-not-working",
+        "title": "Why Are Jujutsu Infinite Codes Not Working?",
         "subsections": [
-          { "h3": "Common Reasons The Forge Codes Fail", "paragraphs": ["Major competitors rank for the forge codes because they have strong domain authority and broad game coverage. Their advantage is scale. The advantage of a dedicated tracker like theforgecodes is precision: cleaner layout, faster path to active entries, transparent daily archive, and focused topical depth. Instead of pretending every code is always working, the freshness model reminds users that codes can expire quickly. Transparent uncertainty builds more trust than overconfident claims, especially in fast-moving Roblox code cycles.", "A practical workflow closes the loop between content and action. First, users discover updates on the homepage. Second, they open the main list page for live status. Third, if redemption fails, they compare with today's date page and check whether a code was moved into expired. This is the biggest difference between a generic article and a truly useful platform that users bookmark and revisit."] },
-          { "h3": "How Long Do The Forge Codes Last", "paragraphs": ["Most the forge codes are time-limited. Some expire within days of release, while others last through entire update cycles. Weekend codes typically disappear by the following week. The homepage should explain what automation can and cannot guarantee. Automation helps discover candidate codes quickly, but individual rewards can still expire between fetch windows. This is not a weakness; it is normal behavior for game code ecosystems. Users should test top entries first, then consult the same-day page if a result fails. This guidance reduces frustration and keeps your audience aligned with how codes change in real time."] }
+          { "h3": "Common Reasons Codes Fail", "paragraphs": ["There are four main reasons a jujutsu infinite code might not work: 1) The code has expired — developers can deactivate codes at any time. 2) You already redeemed it on your account — each code is one-time use. 3) There is a typo, extra space, or wrong capitalization. 4) Your game client is outdated and needs an update.", "If a code was working yesterday but fails today, it has almost certainly expired. Check the expired codes list on our site to confirm before retrying."] },
+          { "h3": "How Long Do Jujutsu Infinite Codes Last?", "paragraphs": ["Code lifespans vary widely. Some codes last only a few days, especially those tied to specific events or milestones. Others can remain active for weeks or even months. There is no official expiration timer shown in-game, which is why we track and timestamp every code on this site. As a rule of thumb: redeem codes as soon as you find them. Do not save them for later."] }
         ]
       },
       {
-        "id": "what-codes-are-there-now-in-the-forge",
-        "title": "What Codes Are There Now in The Forge",
+        "id": "how-to-get-more-jujutsu-infinite-codes",
+        "title": "How to Get More Jujutsu Infinite Codes",
         "subsections": [
-          { "h3": "Active The Forge Codes This Week", "paragraphs": ["A practical homepage structure for this niche looks like this: hero summary, keyword signal cards, active preview grid, redemption mini-guide, troubleshooting guide, editorial sections on update logic, and a right sidebar Recent Codes archive. This mirrors user behavior shown by top competitors but improves clarity. On competitor pages, users often scan a long article and still struggle to find historical links. On the homepage, the Recent Codes list remains visible while scrolling so visitors can jump to date pages immediately. That makes the forge codes journey faster and keeps internal linking strong.", "A second advantage is archive usability. Many users check these updates repeatedly but do not remember what changed since yesterday. A sticky Recent Codes sidebar solves this immediately by giving one-click access to date pages. When a code fails, users can inspect the previous two or three days and detect movement. This is practical value that improves satisfaction and lowers bounce. It also strengthens internal linking signals because each homepage session naturally opens multiple pages in this cluster."] },
-          { "h3": "When Does The Forge Release New Codes", "paragraphs": ["Most drops happen around game updates, events, and social milestones. The homepage carries broad intent and long-form explanations, while /the-forge-codes carries live tables, /the-forge-codes/yyyy-mm-dd carries daily snapshots, and /the-forge-codes/month-name-year carries monthly trend summaries. This layered architecture makes coverage deeper than a single page that gets overwritten daily. It also gives search engines stable URL purposes, reducing indexing confusion and helping each page rank for the most relevant part of the query family.", "The brand voice stays consistent: practical, direct, and timestamp-driven. Players searching the forge codes do not need hype text. They need confidence that the page is current and honest. Keep the copy factual, show last verified time, and maintain clear active versus expired separation. Over time, this consistency is how theforgecodes becomes a recognized destination, even when competing against larger general gaming publications."] }
+          { "h3": "Official Sources for New Codes", "paragraphs": ["The fastest way to find new codes is through official channels. Join the Jujutsu Infinite Discord server for real-time announcements. Follow the developers on Twitter/X and YouTube, where they often drop codes during update reveals and milestone celebrations. You can also join the official Roblox group for group-exclusive codes."] },
+          { "h3": "When Do New Codes Drop?", "paragraphs": ["New jujutsu infinite codes are typically released during: game updates and patches, player count milestones (100K visits, 1M visits, etc.), holidays and seasonal events (Christmas, New Year, summer), collaboration events with other Roblox games, and developer live streams or YouTube videos. Major updates almost always come with at least one new code.", "Bookmark this page and check back daily. We monitor all official sources and update our code list multiple times per day so you never miss a new drop."] }
         ]
       },
       {
-        "id": "how-the-forge-codes-stay-updated",
-        "title": "How The Forge Codes Stay Updated Every Day",
+        "id": "jujutsu-infinite-innate-techniques-and-spins",
+        "title": "Understanding Spins and Innate Techniques",
         "subsections": [
-          { "h3": "Daily Snapshots and The Forge Beta Codes Tracking", "paragraphs": ["The infrastructure already supports scheduled updates. The data feed refreshes on a predictable cadence, snapshots are generated automatically, and each snapshot is published with a date route. This tells users why they can trust recency without checking social media constantly. For SEO, this also reinforces freshness signals by pairing textual promises with real date-based pages and sitemap updates that search engines can crawl.", "Every section must answer a specific intent cluster in the keyword map. If text does not help someone redeem faster, verify faster, or choose the correct page faster, it should be removed. This standard keeps the long-form format useful and prevents quality loss over time as you add new monthly and daily assets around the forge codes topic."] },
-          { "h3": "Monthly Archives: The Forge Codes February 2026 and Beyond", "paragraphs": ["Monthly summaries add another layer of value. Daily pages answer what changed today, while monthly pages explain trend behavior such as patch spikes, seasonal bursts, and keyword pattern shifts like the forge codes 2026 and the forge beta codes. The homepage links to the latest month summary so users can understand context, not just single-day noise. Context improves trust and encourages longer sessions, which supports both user retention and SEO quality for the forge codes ecosystem.", "Over time, this operating model creates a durable moat: homepage for strategy, hub for live action, daily pages for immutable history, and monthly pages for interpretation. This is exactly the structure needed to compete in a query space where the forge codes demand stays high but status changes quickly. The strongest sites in this niche are not only fast at publishing; they are fast at organizing information so users can decide correctly with minimal friction."] }
+          { "h3": "What Are Innate Techniques?", "paragraphs": ["Innate Techniques are the core abilities in Jujutsu Infinite, inspired by cursed techniques from the Jujutsu Kaisen anime. Each technique gives your character unique combat abilities. Some of the most sought-after techniques include Domain Expansion variants, Reverse Cursed Technique for healing, Cursed Speech for crowd control, and Limitless for defensive play. Rarer techniques are significantly more powerful in both PvP and PvE."] },
+          { "h3": "How the Spin System Works", "paragraphs": ["Every Spin gives you a random Innate Technique based on a rarity system. Common techniques are easy to get but weaker, while Mythic and Legendary techniques are extremely rare but game-changing. Free Spins from codes let you try for better techniques without spending Robux. The more Spins you have, the better your chances of landing a rare Innate — which is why redeeming every active code matters."] }
         ]
       }
     ]
   },
   "HistoryPage": {
-    "heading": "The Forge Codes History",
+    "heading": "Jujutsu Infinite Codes History",
     "totalSnapshots": "Total snapshots",
     "uniqueCodesTracked": "Unique codes tracked",
     "latestSnapshot": "Latest snapshot",
@@ -379,7 +375,7 @@
     "showLess": "Show Less"
   },
   "FaqPage": {
-    "heading": "The Forge Codes FAQ",
+    "heading": "Jujutsu Infinite Codes FAQ",
     "coreFaq": "Core FAQ",
     "failureChecklist": "Fast failure checklist"
   },

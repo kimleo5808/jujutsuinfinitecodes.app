@@ -1,9 +1,9 @@
-import {
-  ForgeDailySnapshot,
-  ForgeCode,
-  forgeLatestSnapshot,
-  getForgeMonthSnapshots,
-} from "@/lib/forge-data";
+﻿import {
+  JujutsuDailySnapshot,
+  JujutsuCode,
+  jujutsuLatestSnapshot,
+  getJujutsuMonthSnapshots,
+} from "@/lib/jujutsu-data";
 import { BASE_URL } from "@/config/site";
 import { Locale } from "@/i18n/routing";
 import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
@@ -27,11 +27,11 @@ function longDate(dateText: string) {
   });
 }
 
-function codeList(items: ForgeCode[]) {
+function codeList(items: JujutsuCode[]) {
   return [...new Set(items.map((item) => item.code))];
 }
 
-function countEvents(snapshots: ForgeDailySnapshot[], event: "added" | "expired" | "retested") {
+function countEvents(snapshots: JujutsuDailySnapshot[], event: "added" | "expired" | "retested") {
   return snapshots.reduce(
     (acc, snapshot) => acc + snapshot.updateLog.filter((item) => item.event === event).length,
     0
@@ -84,12 +84,12 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "the forge codes february 2026", "the forge codes feb 2026", "the forge roblox codes february",
-      "the forge codes monthly report", "the forge codes 2026 archive",
+      "jujutsu infinite codes february 2026", "jujutsu infinite codes feb 2026", "jujutsu infinite roblox codes february",
+      "jujutsu infinite codes monthly report", "jujutsu infinite codes 2026 archive",
     ],
     locale: locale as Locale,
-    path: "/the-forge-codes/february-2026",
-    canonicalUrl: "/the-forge-codes/february-2026",
+    path: "/jujutsu-infinite-codes/february-2026",
+    canonicalUrl: "/jujutsu-infinite-codes/february-2026",
   });
 }
 
@@ -97,8 +97,8 @@ export default async function February2026Page() {
   const mt = await getTranslations("MonthPage");
   const locale = await getLocale();
   const eventLabels = { added: mt("added"), expired: mt("expired"), retested: mt("retested") };
-  const monthSnapshots = getForgeMonthSnapshots("2026-02");
-  const monthBase = monthSnapshots.length > 0 ? monthSnapshots : [forgeLatestSnapshot];
+  const monthSnapshots = getJujutsuMonthSnapshots("2026-02");
+  const monthBase = monthSnapshots.length > 0 ? monthSnapshots : [jujutsuLatestSnapshot];
   const sorted = byDateDesc(monthBase);
 
   const latest = sorted[0];
@@ -138,7 +138,7 @@ export default async function February2026Page() {
   const trendNarrative: { h3: string; text: string }[] = [
     {
       h3: "February 2026 Overview and Volume Summary",
-      text: `February 2026 is a transition-heavy month for the forge codes ecosystem. Across ${monthBase.length} daily snapshots, we tracked ${uniqueActive.length} unique active-code appearances, ${uniqueExpired.length} unique expired-code appearances, ${addedTotal} add events, ${expiredTotal} expiry movements, and ${retestedTotal} retest confirmations. Instead of treating each list as an isolated post, this monthly report consolidates movement patterns so users can see cadence, not only isolated entries.`,
+      text: `February 2026 is a transition-heavy month for Jujutsu Infinite Codes ecosystem. Across ${monthBase.length} daily snapshots, we tracked ${uniqueActive.length} unique active-code appearances, ${uniqueExpired.length} unique expired-code appearances, ${addedTotal} add events, ${expiredTotal} expiry movements, and ${retestedTotal} retest confirmations. Instead of treating each list as an isolated post, this monthly report consolidates movement patterns so users can see cadence, not only isolated entries.`,
     },
     {
       h3: "Status Volatility and Burst Windows",
@@ -160,16 +160,16 @@ export default async function February2026Page() {
 
   const monthPlaybook: { h3: string; text: string }[] = [
     {
-      h3: "How to Redeem Codes in The Forge (Monthly Practice)",
+      h3: "How to Redeem Codes in Jujutsu Infinite (Monthly Practice)",
       text: `Use daily freshness before every redeem session. Start with today's highest-overlap active entries, then move to lower-overlap entries only if needed. If a code appears active in the monthly view but failed in your session, compare today's daily page before repeating attempts. Monthly data is context, not a direct substitute for daily execution.`,
     },
     {
-      h3: "How to Use Codes in The Forge (Priority Model)",
+      h3: "How to Use Codes in Jujutsu Infinite (Priority Model)",
       text: `Use active rows as a queue, not a random bucket. Try one code at a time, confirm reward result, then proceed. If several failures occur consecutively, pause and review same-day update logs instead of brute-force retrying every line. This February cycle shows that sequence discipline outperforms volume-based testing.`,
     },
     {
-      h3: "Where to Put Codes in The Forge (Consistency Note)",
-      text: `The correct entry point remains the in-game redeem/code box within The Forge UI. Monthly review shows many user-side failures stem from wrong panel usage, stale server state, or formatting errors, not from code format itself. Keep entry context stable and version current before assuming systemic expiry.`,
+      h3: "Where to Put Codes in Jujutsu Infinite (Consistency Note)",
+      text: `The correct entry point remains the in-game redeem/code box within Jujutsu Infinite UI. Monthly review shows many user-side failures stem from wrong panel usage, stale server state, or formatting errors, not from code format itself. Keep entry context stable and version current before assuming systemic expiry.`,
     },
     {
       h3: "Failure Prevention Strategy for February",
@@ -186,42 +186,42 @@ export default async function February2026Page() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: BASE_URL },
-          { name: "The Forge Codes", url: `${BASE_URL}/the-forge-codes` },
-          { name: "February 2026", url: `${BASE_URL}/the-forge-codes/february-2026` },
+          { name: "Jujutsu Infinite Codes", url: `${BASE_URL}/jujutsu-infinite-codes` },
+          { name: "February 2026", url: `${BASE_URL}/jujutsu-infinite-codes/february-2026` },
         ])}
       />
       {/* Hero header */}
-      <header className="relative overflow-hidden rounded-2xl border border-indigo-200/60 bg-gradient-to-br from-indigo-50 via-white to-violet-50 p-6 dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
-        <div className="pointer-events-none absolute -left-20 -top-20 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl dark:bg-indigo-800/20" />
+      <header className="relative overflow-hidden rounded-2xl border border-violet-200/60 bg-gradient-to-br from-violet-50 via-white to-violet-50 p-6 dark:border-violet-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
+        <div className="pointer-events-none absolute -left-20 -top-20 h-48 w-48 rounded-full bg-violet-200/30 blur-3xl dark:bg-violet-800/20" />
         <div className="pointer-events-none absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-violet-200/30 blur-3xl dark:bg-violet-800/20" />
-        <p className="relative text-xs uppercase tracking-[0.16em] text-indigo-700 dark:text-indigo-300">
+        <p className="relative text-xs uppercase tracking-[0.16em] text-violet-700 dark:text-violet-300">
           {mt("monthlyArchive")}
         </p>
         <h1 className="relative mt-2 font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
-          The Forge Codes February 2026: Monthly Trend, Active Flow, and Archive
+          Jujutsu Infinite Codes February 2026: Monthly Trend, Active Flow, and Archive
         </h1>
         <p className="relative mt-4 max-w-4xl text-slate-700 dark:text-slate-300">
-          This monthly page summarizes February behavior for the forge codes:
+          This monthly page summarizes February behavior for Jujutsu Infinite Codes:
           trend direction, active and expired movement, and operational guidance
           for users who want faster daily decisions.
         </p>
       </header>
 
       {/* Monthly overview stats */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           {mt("monthlyOverview")}
         </h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: mt("snapshotDays"), value: monthBase.length, color: "text-indigo-600 dark:text-indigo-400" },
+            { label: mt("snapshotDays"), value: monthBase.length, color: "text-violet-600 dark:text-violet-400" },
             { label: mt("uniqueActive"), value: uniqueActive.length, color: "text-emerald-600 dark:text-emerald-400" },
             { label: mt("uniqueExpired"), value: uniqueExpired.length, color: "text-red-500 dark:text-red-400" },
             { label: mt("peakUpdateDay"), value: longDate(peakDay.date), color: "text-violet-600 dark:text-violet-400", small: true },
           ].map((stat) => (
             <div
               key={stat.label}
-              className="rounded-xl border border-indigo-100 p-4 dark:border-indigo-900/50"
+              className="rounded-xl border border-violet-100 p-4 dark:border-violet-900/50"
             >
               <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
                 {stat.label}
@@ -244,7 +244,7 @@ export default async function February2026Page() {
                   : "bg-white dark:bg-slate-950"
               }`}
             >
-              <h3 className="font-heading text-lg font-semibold text-indigo-700 dark:text-indigo-300">
+              <h3 className="font-heading text-lg font-semibold text-violet-700 dark:text-violet-300">
                 {item.h3}
               </h3>
               <p className="mt-3 leading-relaxed text-slate-700 dark:text-slate-300">
@@ -256,7 +256,7 @@ export default async function February2026Page() {
       </section>
 
       {/* Weekly trend */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           {mt("weeklyTrend")}
         </h2>
@@ -264,7 +264,7 @@ export default async function February2026Page() {
           {weekly.map((item) => (
             <article
               key={item.week}
-              className="rounded-xl border border-indigo-100 p-4 dark:border-indigo-900/50"
+              className="rounded-xl border border-violet-100 p-4 dark:border-violet-900/50"
             >
               <p className="font-heading text-sm font-semibold text-slate-900 dark:text-slate-100">
                 Week {item.week} ({weekRange(item.week)})
@@ -283,9 +283,9 @@ export default async function February2026Page() {
       </section>
 
       {/* Active codes */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Active The Forge Codes (Latest February Snapshot)
+          Active Jujutsu Infinite Codes (Latest February Snapshot)
         </h2>
         <ul className="mt-4 grid gap-3">
           {monthActive.map((item) => (
@@ -293,7 +293,7 @@ export default async function February2026Page() {
               key={item.code}
               className="rounded-xl border border-emerald-200 bg-emerald-50/60 p-4 dark:border-emerald-900/60 dark:bg-emerald-900/20"
             >
-              <p className="font-mono font-semibold text-indigo-700 dark:text-indigo-300">
+              <p className="font-mono font-semibold text-violet-700 dark:text-violet-300">
                 {item.code}
               </p>
               <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
@@ -305,9 +305,9 @@ export default async function February2026Page() {
       </section>
 
       {/* Expired codes */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Expired The Forge Codes (Latest February Snapshot)
+          Expired Jujutsu Infinite Codes (Latest February Snapshot)
         </h2>
         <ul className="mt-4 grid gap-3">
           {monthExpired.slice(0, 12).map((item) => (
@@ -327,8 +327,8 @@ export default async function February2026Page() {
       </section>
 
       {/* Monthly playbook with H3 */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
-        <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
+        <h2 className="border-l-4 border-violet-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           {mt("monthlyPlaybook")}
         </h2>
         <div className="mt-6 space-y-6">
@@ -341,7 +341,7 @@ export default async function February2026Page() {
                   : "bg-white dark:bg-slate-950"
               }`}
             >
-              <h3 className="font-heading text-lg font-semibold text-indigo-700 dark:text-indigo-300">
+              <h3 className="font-heading text-lg font-semibold text-violet-700 dark:text-violet-300">
                 {item.h3}
               </h3>
               <p className="mt-3 leading-relaxed text-slate-700 dark:text-slate-300">
@@ -353,18 +353,18 @@ export default async function February2026Page() {
       </section>
 
       {/* February change log - timeline */}
-      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+      <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           {mt("changeLog")}
         </h2>
-        <div className="relative mt-5 ml-4 border-l-2 border-indigo-200 pl-6 dark:border-indigo-800">
+        <div className="relative mt-5 ml-4 border-l-2 border-violet-200 pl-6 dark:border-violet-800">
           {sorted.flatMap((snapshot) =>
             snapshot.updateLog.map((item) => (
               <div
                 key={`${snapshot.date}-${item.time}-${item.code}`}
                 className="relative mb-6 last:mb-0"
               >
-                <div className="absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-indigo-400 bg-white dark:border-indigo-500 dark:bg-slate-950" />
+                <div className="absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-violet-400 bg-white dark:border-violet-500 dark:bg-slate-950" />
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
                     {snapshot.date} · {item.time}
@@ -374,7 +374,7 @@ export default async function February2026Page() {
                   >
                     {getEventLabel(item.event, eventLabels)}
                   </span>
-                  <span className="font-mono text-xs text-indigo-700 dark:text-indigo-300">
+                  <span className="font-mono text-xs text-violet-700 dark:text-violet-300">
                     {item.code}
                   </span>
                 </div>

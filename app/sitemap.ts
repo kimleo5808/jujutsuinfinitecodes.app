@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site'
 import { DEFAULT_LOCALE, LOCALES } from '@/i18n/routing'
-import { forgeDailySnapshots } from '@/lib/forge-data'
+import { jujutsuDailySnapshots } from '@/lib/jujutsu-data'
 import { getPosts } from '@/lib/getBlogs'
 import { MetadataRoute } from 'next'
 
@@ -12,11 +12,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticPages = [
     '',
-    '/the-forge-codes',
-    '/the-forge-codes/february-2026',
-    '/how-to-redeem-the-forge-codes',
-    '/the-forge-codes-faq',
-    '/the-forge-codes-history',
+    '/jujutsu-infinite-codes',
+    '/jujutsu-infinite-codes/february-2026',
+    '/how-to-redeem-jujutsu-infinite-codes',
+    '/jujutsu-infinite-codes-faq',
+    '/jujutsu-infinite-codes-history',
     '/about',
     '/privacy-policy',
     '/terms-of-service',
@@ -66,11 +66,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     )
   ).flat()
 
-  const dailyForgePages = LOCALES.flatMap((locale) => {
+  const dailyJujutsuPages = LOCALES.flatMap((locale) => {
     const localePrefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`
 
-    return forgeDailySnapshots.map((snapshot) => ({
-      url: `${siteUrl}${localePrefix}/the-forge-codes/${snapshot.date}`,
+    return jujutsuDailySnapshots.map((snapshot) => ({
+      url: `${siteUrl}${localePrefix}/jujutsu-infinite-codes/${snapshot.date}`,
       lastModified: snapshot.generatedAt ? new Date(snapshot.generatedAt) : new Date(),
       changeFrequency: 'daily' as ChangeFrequency,
       priority: 0.7,
@@ -80,6 +80,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...pages,
     ...blogPages,
-    ...dailyForgePages,
+    ...dailyJujutsuPages,
   ]
 }

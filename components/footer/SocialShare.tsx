@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { BASE_URL } from "@/config/site";
 
 const SHARE_URL = BASE_URL;
 const SHARE_TEXT =
-  "The Forge Codes — Daily verified Roblox code tracker with active codes, redeem guides, and troubleshooting.";
+  "Jujutsu Infinite Codes — Daily verified Roblox code tracker with active codes, redeem guides, and troubleshooting.";
 
 const socialPlatforms = [
   {
@@ -47,7 +47,7 @@ export default function SocialShare() {
           rel="noreferrer noopener"
           aria-label={`Share on ${platform.name}`}
           title={`Share on ${platform.name}`}
-          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-slate-700 text-slate-400 transition-colors hover:border-indigo-500 hover:bg-indigo-500/10 hover:text-white"
+          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-slate-700 text-slate-400 transition-colors hover:border-violet-500 hover:bg-violet-500/10 hover:text-white"
         >
           {platform.icon}
         </a>

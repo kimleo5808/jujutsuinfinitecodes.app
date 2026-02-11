@@ -1,4 +1,4 @@
-import MDXComponents from "@/components/mdx/MDXComponents";
+﻿import MDXComponents from "@/components/mdx/MDXComponents";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";
 import fs from "fs/promises";
@@ -51,7 +51,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "theforgecodes privacy policy", "the forge codes privacy", "theforgecodes data collection",
+      "jujutsuinfinitecodes privacy policy", "jujutsu infinite codes privacy", "jujutsuinfinitecodes data collection",
     ],
     locale: locale as Locale,
     path: `/privacy-policy`,
@@ -69,19 +69,19 @@ export default async function PrivacyPolicyPage({
 
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
-      <header className="relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-6 dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-violet-200/70 bg-gradient-to-br from-violet-50 via-violet-50 to-purple-50 p-6 dark:border-violet-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
           Privacy Policy
         </h1>
         <p className="relative mt-4 text-slate-700 dark:text-slate-300">
-          What data we collect on theforgecodes.app, how we use analytics, and
+          What data we collect on jujutsuinfinitecodes.app, how we use analytics, and
           your privacy rights.
         </p>
       </header>
 
-      <article className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950 sm:p-8">
+      <article className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8">
         <MDXRemote
           source={content}
           components={MDXComponents}

@@ -1,16 +1,16 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DATA_FILE = path.join(process.cwd(), "data", "forge", "snapshots.json");
+const DATA_FILE = path.join(process.cwd(), "data", "jujutsu-infinite", "snapshots.json");
 
 const SOURCE_DEFINITIONS = [
-  { name: "tryhardguides", url: "https://tryhardguides.com/the-forge-codes/", weight: 3 },
-  { name: "beebom", url: "https://beebom.com/roblox-the-forge-codes/", weight: 2 },
-  { name: "dexerto", url: "https://www.dexerto.com/roblox/the-forge-codes-3287134/", weight: 2 },
-  { name: "pcgamer", url: "https://www.pcgamer.com/roblox/the-forge-codes/", weight: 1 },
+  { name: "tryhardguides", url: "https://tryhardguides.com/jujutsu-infinite-codes/", weight: 3 },
+  { name: "beebom", url: "https://beebom.com/roblox-jujutsu-infinite-codes/", weight: 2 },
+  { name: "dexerto", url: "https://www.dexerto.com/roblox/jujutsu-infinite-codes/", weight: 2 },
+  { name: "pcgamer", url: "https://www.pcgamer.com/roblox/jujutsu-infinite-codes/", weight: 1 },
 ];
 
-const FALLBACK_ACTIVE_CODES = ["FORGEWEEKEND4!", "FORGERELAUNCH", "REROLLSPIN"];
+const FALLBACK_ACTIVE_CODES = [];
 
 const CODE_PATTERN = /\b[A-Z0-9][A-Z0-9!_-]{4,19}\b/g;
 const MAX_ACTIVE_CODES = 20;
@@ -21,7 +21,8 @@ const MAX_OCCURRENCES_PER_SOURCE = 8;
 const BLACKLIST = new Set([
   "ROBLOX",
   "CODES",
-  "FORGE",
+  "JUJUTSU",
+  "INFINITE",
   "THE",
   "BETA",
   "FEBRUARY",
@@ -95,6 +96,10 @@ const BLACKLIST = new Set([
   "PROBABLY",
   "SPACE",
   "MEANS",
+  "FORGE",
+  "FORGED",
+  "FORGER",
+  "FORGERS",
 ]);
 
 const ACTIVE_HINTS = ["ACTIVE", "WORKING", "NEW", "LATEST", "VALID", "REDEEM"];
@@ -163,18 +168,29 @@ function isLikelyGameCode(code) {
   }
   const hasStrongSignal =
     /[0-9!]/.test(code) ||
-    code.startsWith("FORGE") ||
-    code.includes("REROLL") ||
+    code.startsWith("JUJUTSU") ||
+    code.startsWith("JJK") ||
+    code.startsWith("JI") ||
     code.includes("SPIN") ||
+    code.includes("CURSED") ||
+    code.includes("DOMAIN") ||
+    code.includes("YEN") ||
+    code.includes("TECHNIQUE") ||
+    code.includes("INNATE") ||
+    code.includes("SORCERER") ||
+    code.includes("CLAN") ||
+    code.includes("EVENT") ||
+    code.includes("UPDATE") ||
     code.includes("BOOST") ||
     code.includes("WEEKEND") ||
     code.includes("WINTER") ||
     code.includes("XMAS") ||
     code.includes("NEWYEAR") ||
     code.includes("RELAUNCH") ||
-    code.includes("RACE") ||
-    code.includes("BLADE") ||
-    code.includes("GEAR");
+    code.includes("RELEASE") ||
+    code.includes("FREESPIN") ||
+    code.includes("LIKES") ||
+    code.includes("VISITS");
   if (!hasStrongSignal) {
     return false;
   }
@@ -268,7 +284,7 @@ async function fetchSource(source, nowIso) {
     const response = await fetch(source.url, {
       headers: {
         "user-agent":
-          "Mozilla/5.0 (compatible; theforgecodes-bot/1.0; +https://theforgecodes.app)",
+          "Mozilla/5.0 (compatible; jujutsuinfinitecodes-bot/1.0; +https://jujutsuinfinitecodes.app)",
         accept: "text/html,application/xhtml+xml",
       },
     });
@@ -386,8 +402,8 @@ async function readSnapshotStore() {
   } catch (error) {
     return {
       version: 1,
-      trackedKeywords: 1231,
-      monthlySearchEstimate: "421K",
+      trackedKeywords: 890,
+      monthlySearchEstimate: "660K",
       snapshots: [],
     };
   }
@@ -529,8 +545,8 @@ async function main() {
 
   const nextStore = {
     version: store.version ?? 1,
-    trackedKeywords: store.trackedKeywords ?? 1231,
-    monthlySearchEstimate: store.monthlySearchEstimate ?? "421K",
+    trackedKeywords: store.trackedKeywords ?? 890,
+    monthlySearchEstimate: store.monthlySearchEstimate ?? "660K",
     snapshots: nextSnapshots,
   };
 
@@ -538,7 +554,7 @@ async function main() {
 
   const okSources = sourceResults.filter((source) => source.ok).length;
   console.log(
-    `[forge-update] ${today} active=${activeEntries.length} expired=${expiredEntries.length} okSources=${okSources}/${sourceResults.length}`
+    `[jujutsu-update] ${today} active=${activeEntries.length} expired=${expiredEntries.length} okSources=${okSources}/${sourceResults.length}`
   );
 }
 

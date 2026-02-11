@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { ChevronDown, ChevronUp, CircleDot, CircleX } from "lucide-react";
 import Link from "next/link";
@@ -69,12 +69,12 @@ export default function HistoryMonthGroup({
   const visibleSnapshots = expanded ? snapshots : snapshots.slice(0, VISIBLE_COUNT);
 
   return (
-    <section className="rounded-2xl border border-indigo-100 bg-white shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
+    <section className="rounded-2xl border border-violet-100 bg-white shadow-sm dark:border-violet-900/40 dark:bg-slate-950">
       {/* Month header — always visible, toggles open/close */}
       <button
         type="button"
         onClick={() => setSectionOpen((v) => !v)}
-        className="flex w-full cursor-pointer items-center justify-between px-6 py-5 text-left transition-colors hover:bg-indigo-50/40 dark:hover:bg-indigo-950/20"
+        className="flex w-full cursor-pointer items-center justify-between px-6 py-5 text-left transition-colors hover:bg-violet-50/40 dark:hover:bg-violet-950/20"
       >
         <div>
           <h2 className="font-heading text-xl font-bold text-slate-900 dark:text-slate-100 sm:text-2xl">
@@ -85,7 +85,7 @@ export default function HistoryMonthGroup({
           </p>
         </div>
         <ChevronDown
-          className={`h-5 w-5 shrink-0 text-indigo-400 transition-transform duration-200 ${sectionOpen ? "rotate-180" : ""}`}
+          className={`h-5 w-5 shrink-0 text-violet-400 transition-transform duration-200 ${sectionOpen ? "rotate-180" : ""}`}
         />
       </button>
 
@@ -99,8 +99,8 @@ export default function HistoryMonthGroup({
                 return (
                   <Link
                     key={snap.date}
-                    href={`/the-forge-codes/${snap.date}`}
-                    className="group relative flex flex-col justify-between rounded-xl border border-indigo-100 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md dark:border-indigo-900/50 dark:bg-slate-900/50 dark:hover:border-indigo-700"
+                    href={`/jujutsu-infinite-codes/${snap.date}`}
+                    className="group relative flex flex-col justify-between rounded-xl border border-violet-100 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-violet-300 hover:shadow-md dark:border-violet-900/50 dark:bg-slate-900/50 dark:hover:border-violet-700"
                   >
                     {/* Date + Latest badge */}
                     <div>
@@ -109,7 +109,7 @@ export default function HistoryMonthGroup({
                           {formatCardDate(snap.date, locale)}
                         </p>
                         {isLatest && (
-                          <span className="shrink-0 rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300">
+                          <span className="shrink-0 rounded-full bg-violet-100 px-2.5 py-0.5 text-xs font-semibold text-violet-700 dark:bg-violet-900/50 dark:text-violet-300">
                             {labels.latest}
                           </span>
                         )}
@@ -139,11 +139,11 @@ export default function HistoryMonthGroup({
                     </div>
 
                     {/* Bottom row */}
-                    <div className="mt-4 flex items-center justify-between border-t border-indigo-50 pt-3 dark:border-indigo-900/40">
+                    <div className="mt-4 flex items-center justify-between border-t border-violet-50 pt-3 dark:border-violet-900/40">
                       <span className="text-xs text-slate-400 dark:text-slate-500">
                         {snap.date}
                       </span>
-                      <span className="text-sm font-semibold text-indigo-600 transition-colors group-hover:text-indigo-800 dark:text-indigo-400 dark:group-hover:text-indigo-300">
+                      <span className="text-sm font-semibold text-violet-600 transition-colors group-hover:text-violet-800 dark:text-violet-400 dark:group-hover:text-violet-300">
                         {labels.viewDetails}
                       </span>
                     </div>
@@ -164,7 +164,7 @@ export default function HistoryMonthGroup({
               <button
                 type="button"
                 onClick={() => setExpanded((v) => !v)}
-                className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-indigo-200 bg-white px-6 py-2.5 text-sm font-semibold text-indigo-700 transition-all hover:border-indigo-300 hover:bg-indigo-50 dark:border-indigo-800 dark:bg-slate-900 dark:text-indigo-300 dark:hover:bg-indigo-950/50"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-2.5 text-sm font-semibold text-violet-700 transition-all hover:border-violet-300 hover:bg-violet-50 dark:border-violet-800 dark:bg-slate-900 dark:text-violet-300 dark:hover:bg-violet-950/50"
               >
                 {expanded ? (
                   <>

@@ -21,10 +21,10 @@ export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "theforgecodes",
+    name: "jujutsuinfinitecodes",
     url: BASE_URL,
     description:
-      "Daily verified The Forge Roblox code tracker with active and expired codes, timestamps, redeem steps, and troubleshooting.",
+      "Daily verified Jujutsu Infinite Roblox code tracker with active and expired codes, timestamps, redeem steps, and troubleshooting.",
     inLanguage: ["en", "zh", "ja"],
   };
 }
@@ -122,12 +122,12 @@ export function articleSchema({
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
-      name: "theforgecodes",
+      name: "jujutsuinfinitecodes",
       url: BASE_URL,
     },
     publisher: {
       "@type": "Organization",
-      name: "theforgecodes",
+      name: "jujutsuinfinitecodes",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",

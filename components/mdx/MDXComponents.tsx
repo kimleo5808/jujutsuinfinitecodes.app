@@ -31,14 +31,14 @@ const MDXComponents: MDXComponentsProps = {
   h2: (props) => (
     <Heading
       level={2}
-      className="text-2xl font-semibold font-heading mt-8 mb-6 border-l-4 border-indigo-500 pl-4"
+      className="text-2xl font-semibold font-heading mt-8 mb-6 border-l-4 border-violet-500 pl-4"
       {...props}
     />
   ),
   h3: (props) => (
     <Heading
       level={3}
-      className="text-xl font-semibold font-heading mt-6 mb-4 text-indigo-700 dark:text-indigo-300"
+      className="text-xl font-semibold font-heading mt-6 mb-4 text-violet-700 dark:text-violet-300"
       {...props}
     />
   ),
@@ -55,7 +55,7 @@ const MDXComponents: MDXComponentsProps = {
       {...props}
     />
   ),
-  hr: (props) => <hr className="border-t border-indigo-200 dark:border-indigo-800 my-8" {...props} />,
+  hr: (props) => <hr className="border-t border-violet-200 dark:border-violet-800 my-8" {...props} />,
   p: (props) => (
     <p
       className="mt-6 mb-6 leading-relaxed text-slate-700 dark:text-slate-300"
@@ -64,7 +64,7 @@ const MDXComponents: MDXComponentsProps = {
   ),
   a: (props) => (
     <a
-      className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors underline underline-offset-4"
+      className="text-violet-600 hover:text-violet-800 dark:text-violet-400 dark:hover:text-violet-300 transition-colors underline underline-offset-4"
       target="_blank"
       {...props}
     />
@@ -76,7 +76,7 @@ const MDXComponents: MDXComponentsProps = {
   ),
   code: (props) => (
     <code
-      className="bg-indigo-50 dark:bg-indigo-900/30 rounded px-2 py-1 font-mono text-sm text-indigo-700 dark:text-indigo-300"
+      className="bg-violet-50 dark:bg-violet-900/30 rounded px-2 py-1 font-mono text-sm text-violet-700 dark:text-violet-300"
       {...props}
     />
   ),
@@ -88,12 +88,12 @@ const MDXComponents: MDXComponentsProps = {
   ),
   blockquote: (props) => (
     <blockquote
-      className="pl-6 border-l-4 border-indigo-300 dark:border-indigo-700 my-6 text-slate-600 dark:text-slate-400 italic"
+      className="pl-6 border-l-4 border-violet-300 dark:border-violet-700 my-6 text-slate-600 dark:text-slate-400 italic"
       {...props}
     />
   ),
   img: (props) => (
-    <img className="rounded-lg border-2 border-indigo-200 dark:border-indigo-800 my-6" {...props} />
+    <img className="rounded-lg border-2 border-violet-200 dark:border-violet-800 my-6" {...props} />
   ),
   strong: (props) => <strong className="font-bold" {...props} />,
   table: (props) => (
@@ -104,16 +104,16 @@ const MDXComponents: MDXComponentsProps = {
       />
     </div>
   ),
-  tr: (props) => <tr className="border-t border-indigo-100 dark:border-indigo-900" {...props} />,
+  tr: (props) => <tr className="border-t border-violet-100 dark:border-violet-900" {...props} />,
   th: (props) => (
     <th
-      className="px-6 py-3 font-bold text-left bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 [&[align=center]]:text-center [&[align=right]]:text-right"
+      className="px-6 py-3 font-bold text-left bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 [&[align=center]]:text-center [&[align=right]]:text-right"
       {...props}
     />
   ),
   td: (props) => (
     <td
-      className="px-6 py-4 text-left border-t border-indigo-50 dark:border-indigo-900/50 [&[align=center]]:text-center [&[align=right]]:text-right"
+      className="px-6 py-4 text-left border-t border-violet-50 dark:border-violet-900/50 [&[align=center]]:text-center [&[align=right]]:text-right"
       {...props}
     />
   ),

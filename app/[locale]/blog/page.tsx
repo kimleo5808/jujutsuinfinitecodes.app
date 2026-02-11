@@ -1,4 +1,4 @@
-import { BlogCard } from "@/app/[locale]/blog/BlogCard";
+﻿import { BlogCard } from "@/app/[locale]/blog/BlogCard";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { getPosts } from "@/lib/getBlogs";
 import { constructMetadata } from "@/lib/metadata";
@@ -22,8 +22,8 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "the forge codes blog", "the forge roblox blog", "roblox the forge news",
-      "the forge codes updates", "the forge tips and guides",
+      "jujutsu infinite codes blog", "jujutsu infinite roblox blog", "roblox jujutsu infinite news",
+      "jujutsu infinite codes updates", "jujutsu infinite tips and guides",
     ],
     locale: locale as Locale,
     path: `/blog`,

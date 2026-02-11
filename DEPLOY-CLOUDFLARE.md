@@ -5,7 +5,7 @@ This project is configured to deploy with OpenNext on Cloudflare Workers.
 ## 1. Prerequisites
 
 - Cloudflare account with Workers enabled
-- Domain added in Cloudflare (`theforgecodes.app`)
+- Domain added in Cloudflare (`jujutsuinfinitecodes.app`)
 - Node.js 20.x (recommended)
 - `pnpm` installed
 
@@ -20,19 +20,19 @@ pnpm wrangler login
 
 `wrangler.jsonc` uses this bucket:
 
-- `theforgecodes-cache`
+- `jujutsuinfinitecodes-cache`
 
 Create it once:
 
 ```bash
-pnpm wrangler r2 bucket create theforgecodes-cache
+pnpm wrangler r2 bucket create jujutsuinfinitecodes-cache
 ```
 
 ## 4. Set production environment variables in Cloudflare
 
 Configure these in Workers settings:
 
-- `NEXT_PUBLIC_SITE_URL=https://theforgecodes.app`
+- `NEXT_PUBLIC_SITE_URL=https://jujutsuinfinitecodes.app`
 - `NEXT_PUBLIC_GOOGLE_ID=<your GA id>`
 - `NEXT_PUBLIC_GOOGLE_ADSENSE_ID=<your Adsense id>`
 - optional: `NEXT_PUBLIC_BAIDU_TONGJI`

@@ -23,7 +23,7 @@ jobs:
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      NEXT_PUBLIC_SITE_URL: https://theforgecodes.app
+      NEXT_PUBLIC_SITE_URL: https://jujutsuinfinitecodes.app
       NEXT_PUBLIC_GOOGLE_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ID }}
       NEXT_PUBLIC_GOOGLE_ADSENSE_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ADSENSE_ID }}
       NEXT_PUBLIC_BAIDU_TONGJI: ${{ secrets.NEXT_PUBLIC_BAIDU_TONGJI }}
@@ -45,17 +45,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Refresh forge code snapshots
-        run: pnpm run update:forge-codes
+      - name: Refresh jujutsu infinite code snapshots
+        run: pnpm run update:jujutsu-codes
 
       - name: Commit snapshot updates
         if: github.event_name == 'schedule'
         run: |
-          if [[ -n "$(git status --porcelain data/forge/snapshots.json)" ]]; then
+          if [[ -n "$(git status --porcelain data/jujutsu-infinite/snapshots.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/forge/snapshots.json
-            git commit -m "chore: update forge snapshots"
+            git add data/jujutsu-infinite/snapshots.json
+            git commit -m "chore: update jujutsu infinite snapshots"
             git push
           else
             echo "No snapshot changes to commit"

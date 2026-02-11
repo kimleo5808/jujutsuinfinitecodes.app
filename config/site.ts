@@ -1,21 +1,21 @@
 import { SiteConfig } from "@/types/siteConfig";
 
 export const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://theforgecodes.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://jujutsuinfinitecodes.app";
 
 export const siteConfig: SiteConfig = {
-  name: "theforgecodes",
-  tagLine: "Daily verified The Forge Roblox code tracker",
+  name: "jujutsuinfinitecodes",
+  tagLine: "Daily verified Jujutsu Infinite Roblox code tracker",
   description:
-    "Find active and expired the forge codes with daily verification, timestamps, redeem instructions, and troubleshooting.",
+    "Find active and expired jujutsu infinite codes with daily verification, timestamps, redeem instructions, and troubleshooting.",
   url: BASE_URL,
   authors: [
     {
-      name: "theforgecodes",
-      url: "https://theforgecodes.app",
+      name: "jujutsuinfinitecodes",
+      url: "https://jujutsuinfinitecodes.app",
     },
   ],
-  creator: "@theforgecodes",
+  creator: "@jujutsuinfinitecodes",
   themeColors: [
     { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
     { media: "(prefers-color-scheme: dark)", color: "#020817" },

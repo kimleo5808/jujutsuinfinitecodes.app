@@ -67,8 +67,8 @@ export async function constructMetadata({
     title: finalTitle,
     description: pageDescription,
     keywords: keywords.length > 0 ? keywords : [
-      'the forge codes', 'the forge roblox codes', 'roblox the forge codes',
-      'the forge codes 2026', 'codes for the forge',
+      'jujutsu infinite codes', 'jujutsu infinite roblox codes', 'roblox jujutsu infinite codes',
+      'jujutsu infinite codes 2026', 'codes for jujutsu infinite',
     ],
     authors: siteConfig.authors,
     creator: siteConfig.creator,

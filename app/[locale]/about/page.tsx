@@ -1,4 +1,4 @@
-import MDXComponents from "@/components/mdx/MDXComponents";
+﻿import MDXComponents from "@/components/mdx/MDXComponents";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
@@ -53,8 +53,8 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "about theforgecodes", "the forge codes website", "the forge roblox codes tracker",
-      "theforgecodes about", "the forge codes verification",
+      "about jujutsuinfinitecodes", "jujutsu infinite codes website", "jujutsu infinite roblox codes tracker",
+      "jujutsuinfinitecodes about", "jujutsu infinite codes verification",
     ],
     locale: locale as Locale,
     path: `/about`,
@@ -74,19 +74,19 @@ export default async function AboutPage({ params }: { params: Params }) {
           { name: "About", url: `${BASE_URL}/about` },
         ])}
       />
-      <header className="relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-6 dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-violet-200/70 bg-gradient-to-br from-violet-50 via-violet-50 to-purple-50 p-6 dark:border-violet-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
-          About theforgecodes
+          About jujutsuinfinitecodes
         </h1>
         <p className="relative mt-4 text-slate-700 dark:text-slate-300">
-          How we verify the forge codes daily and maintain transparent update
+          How we verify Jujutsu Infinite Codes daily and maintain transparent update
           tracking for Roblox players.
         </p>
       </header>
 
-      <article className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950 sm:p-8">
+      <article className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8">
         <MDXRemote
           source={content}
           components={MDXComponents}

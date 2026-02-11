@@ -1,4 +1,4 @@
-import MDXComponents from "@/components/mdx/MDXComponents";
+﻿import MDXComponents from "@/components/mdx/MDXComponents";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { breadcrumbSchema, howToSchema, JsonLd } from "@/lib/jsonld";
@@ -22,7 +22,7 @@ async function getMDXContent(locale: string) {
   const filePath = path.join(
     process.cwd(),
     "content",
-    "how-to-redeem-the-forge-codes",
+    "how-to-redeem-jujutsu-infinite-codes",
     `${locale}.mdx`
   );
   try {
@@ -49,13 +49,13 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "how to redeem codes in the forge", "where to put codes in the forge",
-      "how to enter codes in the forge", "the forge codes redeem",
-      "how to use codes in the forge", "the forge roblox redeem guide",
+      "how to redeem codes in jujutsu infinite", "where to put codes in jujutsu infinite",
+      "how to enter codes in jujutsu infinite", "jujutsu infinite codes redeem",
+      "how to use codes in jujutsu infinite", "jujutsu infinite roblox redeem guide",
     ],
     locale: locale as Locale,
-    path: "/how-to-redeem-the-forge-codes",
-    canonicalUrl: "/how-to-redeem-the-forge-codes",
+    path: "/how-to-redeem-jujutsu-infinite-codes",
+    canonicalUrl: "/how-to-redeem-jujutsu-infinite-codes",
   });
 }
 
@@ -71,10 +71,10 @@ export default async function RedeemGuidePage({
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
       <JsonLd
         data={howToSchema(
-          "How to Redeem Codes in The Forge",
-          "Step-by-step guide for redeeming codes in The Forge on Roblox across all devices.",
+          "How to Redeem Codes in Jujutsu Infinite",
+          "Step-by-step guide for redeeming codes in Jujutsu Infinite on Roblox across all devices.",
           [
-            { name: "Launch The Forge", text: "Open Roblox and search for The Forge. Click Play and wait until your character fully loads into the game world." },
+            { name: "Launch Jujutsu Infinite", text: "Open Roblox and search for Jujutsu Infinite. Click Play and wait until your character fully loads into the game world." },
             { name: "Find the codes panel", text: "Look at the left side of your screen for a gift box or Twitter/X icon. Tap or click this icon to open the code redemption panel." },
             { name: "Enter the code exactly", text: "Type or paste the code into the text input field. Codes are case-sensitive — copy-paste to avoid typos." },
             { name: "Confirm the reward", text: "Tap Redeem and check your inventory for the reward. Common rewards include rerolls, luck totems, gems, and boosts." },
@@ -84,25 +84,25 @@ export default async function RedeemGuidePage({
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: BASE_URL },
-          { name: "How to Redeem The Forge Codes", url: `${BASE_URL}/how-to-redeem-the-forge-codes` },
+          { name: "How to Redeem Jujutsu Infinite Codes", url: `${BASE_URL}/how-to-redeem-jujutsu-infinite-codes` },
         ])}
       />
       {/* Hero */}
-      <header className="relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-6 dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-violet-200/70 bg-gradient-to-br from-violet-50 via-violet-50 to-purple-50 p-6 dark:border-violet-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
-          How to Redeem Codes in The Forge
+          How to Redeem Codes in Jujutsu Infinite
         </h1>
         <p className="relative mt-4 text-slate-700 dark:text-slate-300">
-          Complete 2026 guide covering how to redeem the forge codes on every
+          Complete 2026 guide covering how to redeem Jujutsu Infinite Codes on every
           device, what rewards you get, troubleshooting common errors, and where
           to find new codes.
         </p>
       </header>
 
       {/* MDX Content */}
-      <article className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950 sm:p-8">
+      <article className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8">
         <MDXRemote
           source={content}
           components={MDXComponents}
