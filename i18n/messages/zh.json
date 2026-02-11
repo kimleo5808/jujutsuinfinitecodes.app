@@ -22,10 +22,6 @@
       {
         "name": "History",
         "href": "/the-forge-codes-history"
-      },
-      {
-        "name": "Feb 2026",
-        "href": "/the-forge-codes/february-2026"
       }
     ]
   },
@@ -47,8 +43,8 @@
               "name": "Live Codes"
             },
             {
-              "href": "/the-forge-codes/february-2026",
-              "name": "February 2026"
+              "href": "/the-forge-codes-history",
+              "name": "History"
             }
           ]
         },
