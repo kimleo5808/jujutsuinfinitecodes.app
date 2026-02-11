@@ -1,12 +1,14 @@
 import {
   ForgeDailySnapshotArchive,
   ForgeEditorialGuideSection,
+  ForgeFaqSection,
   ForgeHero,
   ForgeKeywordNarrativeSection,
   ForgeOperationsManualSection,
   ForgeOverviewSections,
-  ForgeRedeemAndTroubleshoot,
-  ForgeUpdateLogAndFaq,
+  ForgeRedeemSection,
+  ForgeTroubleshootSection,
+  ForgeUpdateLogSection,
 } from "@/components/forge/ForgeSections";
 
 export default function ForgeHubPage() {
@@ -16,8 +18,10 @@ export default function ForgeHubPage() {
         <div className="flex flex-col gap-8">
           <ForgeHero />
           <ForgeOverviewSections />
-          <ForgeRedeemAndTroubleshoot />
-          <ForgeUpdateLogAndFaq />
+          <ForgeRedeemSection />
+          <ForgeTroubleshootSection />
+          <ForgeUpdateLogSection />
+          <ForgeFaqSection />
           <ForgeKeywordNarrativeSection />
           <ForgeEditorialGuideSection />
           <ForgeOperationsManualSection />
