@@ -268,6 +268,17 @@ export async function JujutsuHero() {
         <p className="relative mt-4 text-sm text-slate-600 dark:text-slate-300">
           {t("hero.disclaimer")}
         </p>
+
+        <div className="relative mt-8 overflow-hidden rounded-2xl border border-violet-200/60 dark:border-violet-900/40">
+          <Image
+            src="/images/all-jujutsu-infinite-codes-free-spins.webp"
+            alt="All Jujutsu Infinite codes for free spins showing the in-game spin menu with 2227 spins and innate technique slots"
+            width={1280}
+            height={720}
+            className="w-full object-cover"
+            priority
+          />
+        </div>
       </div>
     </section>
   );
@@ -508,6 +519,25 @@ export async function JujutsuFaqSection() {
 /* ------------------------------------------------------------------ */
 /*  SEO Narrative Sections (with H2/H3 structure)                      */
 /* ------------------------------------------------------------------ */
+
+export function JujutsuRelatedGameImage() {
+  return (
+    <div className="w-full overflow-hidden rounded-2xl border border-violet-100 shadow-sm dark:border-violet-900/40">
+      <Image
+        src="/images/blue-lock-rivals-roblox-game-cover.webp"
+        alt="Blue Lock Rivals Roblox game cover art featuring anime soccer players with cursed energy abilities in a dark arena"
+        width={1200}
+        height={675}
+        className="w-full object-cover"
+      />
+      <div className="bg-white p-4 dark:bg-slate-950">
+        <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+          Blue Lock Rivals — Trending anime Roblox game with redeemable codes
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export function JujutsuKeywordNarrativeSection() {
   return <NarrativeSection data={jujutsuKeywordNarrative} />;

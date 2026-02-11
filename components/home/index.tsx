@@ -9,6 +9,7 @@ import {
   ListChecks,
   SearchCheck,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
 
@@ -167,6 +168,17 @@ export default async function HomeComponent() {
                   <ListChecks className="h-4 w-4" />
                 </Link>
               </div>
+
+              <div className="mt-8 overflow-hidden rounded-2xl border border-violet-200/60 dark:border-violet-900/40">
+                <Image
+                  src="/images/jujutsu-infinite-roblox-game-cover.webp"
+                  alt="Jujutsu Infinite Roblox game cover art featuring anime-style sorcerer characters with cursed energy effects"
+                  width={1200}
+                  height={675}
+                  className="w-full object-cover"
+                  priority
+                />
+              </div>
             </div>
           </section>
 
@@ -271,6 +283,22 @@ export default async function HomeComponent() {
               </article>
             </div>
           </section>
+
+          {/* Related Game */}
+          <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-sm dark:border-slate-800">
+            <Image
+              src="/images/jujutsu-zero-roblox-game-cover.webp"
+              alt="Jujutsu Zero Roblox game cover art featuring Gojo Satoru with blue cursed energy and Sukuna in a red domain"
+              width={1200}
+              height={675}
+              className="w-full object-cover"
+            />
+            <div className="bg-white p-4 dark:bg-slate-950">
+              <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                Jujutsu Zero — Another popular Jujutsu Kaisen-inspired Roblox game
+              </p>
+            </div>
+          </div>
 
           {/* SEO Content Sections */}
           {[0, 1, 2, 3, 4].map((sectionIndex) => {

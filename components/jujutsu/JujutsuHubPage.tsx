@@ -7,6 +7,7 @@ import {
   JujutsuOperationsManualSection,
   JujutsuOverviewSections,
   JujutsuRedeemSection,
+  JujutsuRelatedGameImage,
   JujutsuTroubleshootSection,
   JujutsuUpdateLogSection,
 } from "@/components/jujutsu/JujutsuSections";
@@ -22,6 +23,7 @@ export default function JujutsuHubPage() {
           <JujutsuTroubleshootSection />
           <JujutsuUpdateLogSection />
           <JujutsuFaqSection />
+          <JujutsuRelatedGameImage />
           <JujutsuKeywordNarrativeSection />
           <JujutsuEditorialGuideSection />
           <JujutsuOperationsManualSection />
