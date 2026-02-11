@@ -325,321 +325,353 @@
     },
     {
       "date": "2026-02-11",
-      "generatedAt": "2026-02-11T03:29:10.632Z",
-      "lastVerified": "February 11 2026 at 03:29 UTC",
+      "generatedAt": "2026-02-11T17:33:14.446Z",
+      "lastVerified": "February 11 2026 at 17:33 UTC",
       "activeCodes": [
         {
-          "code": "REROLLS",
+          "code": "SPINS",
           "reward": "Reward not listed by source pages",
           "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, dexerto, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "REROLL",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, dexerto, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGEWEEKEND3",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGEWEEKEND4",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "beebom, dexerto",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGEWEEKEND2",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGE2M",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "20KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "100KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "40KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "10KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "15KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom, pcgamer",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGED",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "FORGWEEKEND",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "HAPPYNEWYEAR",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "5KLIKES",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "tryhardguides, beebom",
-          "note": "Auto-collected from public pages. Verify in-game before use."
-        },
-        {
-          "code": "75MVISITS",
-          "reward": "Reward not listed by source pages",
-          "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
+          "lastTested": "2026-02-11 17:33 UTC",
           "source": "tryhardguides",
           "note": "Auto-collected from public pages. Verify in-game before use."
         },
         {
-          "code": "BLADE",
+          "code": "UPDATES",
           "reward": "Reward not listed by source pages",
           "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "pcgamer",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
           "note": "Auto-collected from public pages. Verify in-game before use."
         },
         {
-          "code": "FREESPINS",
+          "code": "WINTER_UPD",
           "reward": "Reward not listed by source pages",
           "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "beebom, pcgamer",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
           "note": "Auto-collected from public pages. Verify in-game before use."
         },
         {
-          "code": "FORGERS",
+          "code": "EVENTS",
           "reward": "Reward not listed by source pages",
           "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "beebom",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
           "note": "Auto-collected from public pages. Verify in-game before use."
         },
         {
-          "code": "FORGER",
+          "code": "TWITTER_75_YAY",
           "reward": "Reward not listed by source pages",
           "status": "active",
-          "lastTested": "2026-02-11 03:29 UTC",
-          "source": "beebom",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "WINTER_SHUTDOWN",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "RELEASE",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "RELEASED",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "RELEASES",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "WINTER_END",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "1M_LIKES",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "96_PERCENT",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "WORLD_TRADING_UPDATE",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "1M_FAVORITES",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "2M_FAVS",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "50K_FOLLOWERS",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "HAPPY_2025",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "HELLO123",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "2025_CHRISTMAS",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
+          "note": "Auto-collected from public pages. Verify in-game before use."
+        },
+        {
+          "code": "20K_FOLLOW_THUNDR",
+          "reward": "Reward not listed by source pages",
+          "status": "active",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides",
           "note": "Auto-collected from public pages. Verify in-game before use."
         }
       ],
-      "expiredCodes": [],
+      "expiredCodes": [
+        {
+          "code": "PIN55",
+          "reward": "Reward not listed by source pages",
+          "status": "expired",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides"
+        },
+        {
+          "code": "20KWINTER",
+          "reward": "Reward not listed by source pages",
+          "status": "expired",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides"
+        },
+        {
+          "code": "SOULKING_20K",
+          "reward": "Reward not listed by source pages",
+          "status": "expired",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides"
+        },
+        {
+          "code": "WINTER_SOON",
+          "reward": "Reward not listed by source pages",
+          "status": "expired",
+          "lastTested": "2026-02-11 17:33 UTC",
+          "source": "tryhardguides"
+        }
+      ],
       "updateLog": [
         {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "REROLLS",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "REROLL",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGEWEEKEND3",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGEWEEKEND4",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGEWEEKEND2",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGE2M",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "20KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "100KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "40KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "10KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "15KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGED",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGWEEKEND",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "HAPPYNEWYEAR",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "5KLIKES",
-          "summary": "Still listed as active in latest source refresh."
-        },
-        {
-          "time": "2026-02-11 03:29 UTC",
+          "time": "2026-02-11 17:33 UTC",
           "event": "added",
-          "code": "75MVISITS",
+          "code": "SPINS",
           "summary": "Newly detected from latest source refresh."
         },
         {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "BLADE",
-          "summary": "Still listed as active in latest source refresh."
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "UPDATES",
+          "summary": "Newly detected from latest source refresh."
         },
         {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FREESPINS",
-          "summary": "Still listed as active in latest source refresh."
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "WINTER_UPD",
+          "summary": "Newly detected from latest source refresh."
         },
         {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGERS",
-          "summary": "Still listed as active in latest source refresh."
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "EVENTS",
+          "summary": "Newly detected from latest source refresh."
         },
         {
-          "time": "2026-02-11 03:29 UTC",
-          "event": "retested",
-          "code": "FORGER",
-          "summary": "Still listed as active in latest source refresh."
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "TWITTER_75_YAY",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "WINTER_SHUTDOWN",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "RELEASE",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "RELEASED",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "RELEASES",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "WINTER_END",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "1M_LIKES",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "96_PERCENT",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "WORLD_TRADING_UPDATE",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "1M_FAVORITES",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "2M_FAVS",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "50K_FOLLOWERS",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "HAPPY_2025",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "HELLO123",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "2025_CHRISTMAS",
+          "summary": "Newly detected from latest source refresh."
+        },
+        {
+          "time": "2026-02-11 17:33 UTC",
+          "event": "added",
+          "code": "20K_FOLLOW_THUNDR",
+          "summary": "Newly detected from latest source refresh."
         }
       ],
       "sources": [
         {
           "name": "tryhardguides",
-          "url": "https://tryhardguides.com/the-forge-codes/",
+          "url": "https://tryhardguides.com/jujutsu-infinite-codes/",
           "ok": true,
-          "fetchedAt": "2026-02-11T03:29:10.632Z",
-          "foundCodes": 15
+          "fetchedAt": "2026-02-11T17:33:14.446Z",
+          "foundCodes": 36
         },
         {
           "name": "beebom",
-          "url": "https://beebom.com/roblox-the-forge-codes/",
-          "ok": true,
-          "fetchedAt": "2026-02-11T03:29:10.632Z",
-          "foundCodes": 18
+          "url": "https://beebom.com/roblox-jujutsu-infinite-codes/",
+          "ok": false,
+          "fetchedAt": "2026-02-11T17:33:14.446Z",
+          "foundCodes": 0,
+          "error": "HTTP 404"
         },
         {
           "name": "dexerto",
-          "url": "https://www.dexerto.com/roblox/the-forge-codes-3287134/",
-          "ok": true,
-          "fetchedAt": "2026-02-11T03:29:10.632Z",
-          "foundCodes": 3
+          "url": "https://www.dexerto.com/roblox/jujutsu-infinite-codes/",
+          "ok": false,
+          "fetchedAt": "2026-02-11T17:33:14.446Z",
+          "foundCodes": 0,
+          "error": "HTTP 404"
         },
         {
           "name": "pcgamer",
-          "url": "https://www.pcgamer.com/roblox/the-forge-codes/",
-          "ok": true,
-          "fetchedAt": "2026-02-11T03:29:10.632Z",
-          "foundCodes": 15
+          "url": "https://www.pcgamer.com/roblox/jujutsu-infinite-codes/",
+          "ok": false,
+          "fetchedAt": "2026-02-11T17:33:14.446Z",
+          "foundCodes": 0,
+          "error": "HTTP 404"
         }
       ]
     }
