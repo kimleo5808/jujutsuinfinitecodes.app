@@ -1,6 +1,7 @@
 import {
   activeForgeCodes,
   expiredForgeCodes,
+  forgeEditorialGuide,
   FAQItem,
   forgeFaq,
   forgeKeywordNarrative,
@@ -373,6 +374,27 @@ export function ForgeKeywordNarrativeSection() {
   );
 }
 
+export function ForgeEditorialGuideSection() {
+  return (
+    <section className="w-full rounded-2xl border border-orange-100 bg-white p-6 dark:border-orange-900/40 dark:bg-slate-950">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+        The Forge Codes Daily Strategy Guide
+      </h2>
+      <p className="mt-2 text-slate-600 dark:text-slate-300">
+        This long-form section explains how to interpret the forge codes feed,
+        how to avoid false positives, and how to use daily snapshots for better
+        decisions. It is intentionally comprehensive so this page works as a
+        reference hub, not only a short code list.
+      </p>
+      <div className="prose prose-slate mt-6 max-w-none dark:prose-invert">
+        {forgeEditorialGuide.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 type ForgeDailySnapshotArchiveProps = {
   currentDate?: string;
 };
@@ -416,7 +438,7 @@ export function ForgeDailySnapshotArchive({
       </h2>
 
       <div className="mt-3 overflow-hidden rounded-lg border border-orange-100 dark:border-orange-900/50">
-        {forgeRecentSnapshots.slice(0, 30).map((item, index) => (
+        {forgeRecentSnapshots.slice(0, 30).map((item) => (
           <Link
             key={item.date}
             href={`/the-forge-codes/${item.date}`}

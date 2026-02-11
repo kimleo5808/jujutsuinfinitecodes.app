@@ -1,4 +1,4 @@
-import HomeComponent from "@/components/home";
+import ForgeHubPage from "@/components/forge/ForgeHubPage";
 import { Locale } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
@@ -24,5 +24,5 @@ export async function generateMetadata({
 }
 
 export default function TheForgeCodesPage() {
-  return <HomeComponent />;
+  return <ForgeHubPage />;
 }
