@@ -70,24 +70,6 @@ export default async function Footer() {
               name: siteConfig.name,
             })}
           </p>
-          <div className="flex items-center gap-4">
-            <I18nLink
-              href="/privacy-policy"
-              title={tFooter("PrivacyPolicy")}
-              prefetch={false}
-              className="transition-colors hover:text-white"
-            >
-              {tFooter("PrivacyPolicy")}
-            </I18nLink>
-            <I18nLink
-              href="/terms-of-service"
-              title={tFooter("TermsOfService")}
-              prefetch={false}
-              className="transition-colors hover:text-white"
-            >
-              {tFooter("TermsOfService")}
-            </I18nLink>
-          </div>
         </div>
       </div>
     </footer>

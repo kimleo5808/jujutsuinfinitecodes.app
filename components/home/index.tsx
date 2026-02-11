@@ -10,6 +10,7 @@ import {
   SearchCheck,
   Zap,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const latestSnapshot = forgeRecentSnapshots[0];
@@ -318,6 +319,17 @@ export default function HomeComponent() {
                 deep-research users from Google.
               </p>
 
+              <div className="mt-6 overflow-hidden rounded-2xl border border-indigo-100 dark:border-indigo-900/40">
+                <Image
+                  src="/images/the-forge-roblox-official-artwork.jpg"
+                  alt="The Forge Roblox game official artwork showing a blacksmith forging weapons with sparks and the game logo"
+                  width={960}
+                  height={540}
+                  className="w-full object-cover"
+                  priority
+                />
+              </div>
+
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
                   href="/the-forge-codes"
@@ -478,6 +490,26 @@ export default function HomeComponent() {
               </div>
             </section>
           ))}
+
+          {/* Crafting UI Preview */}
+          <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
+            <h2 className="flex items-center gap-2 font-heading text-2xl text-slate-900 dark:text-slate-100">
+              <Zap className="h-5 w-5 text-indigo-500" />
+              What You Can Get With The Forge Codes
+            </h2>
+            <p className="mt-2 text-slate-500 dark:text-slate-400">
+              The Forge codes unlock rerolls, luck totems, boosts, gems, and crafting advantages. Below is the in-game crafting interface where you can use your rewards.
+            </p>
+            <div className="mt-5 overflow-hidden rounded-xl border border-indigo-100 dark:border-indigo-900/40">
+              <Image
+                src="/images/the-forge-crafting-interface.webp"
+                alt="The Forge crafting interface showing Knight Leggings item with masterwork percentage, materials, defense stats, and price"
+                width={800}
+                height={450}
+                className="w-full object-cover"
+              />
+            </div>
+          </section>
 
           {/* FAQ Accordion */}
           <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">

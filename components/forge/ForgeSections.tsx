@@ -27,6 +27,7 @@ import {
   History,
   SearchCheck,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 /* ------------------------------------------------------------------ */
@@ -329,6 +330,33 @@ export function ForgeRedeemSection() {
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="overflow-hidden rounded-xl border border-indigo-100 dark:border-indigo-900/40">
+          <Image
+            src="/images/the-forge-codes-settings-panel-pc.webp"
+            alt="The Forge codes redemption panel in Settings menu with arrows pointing to the codes input field on PC"
+            width={1024}
+            height={576}
+            className="w-full object-cover"
+          />
+          <p className="bg-indigo-50/60 px-4 py-2 text-xs text-slate-600 dark:bg-indigo-950/30 dark:text-slate-400">
+            PC: Open Settings and find the Codes input field
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-xl border border-indigo-100 dark:border-indigo-900/40">
+          <Image
+            src="/images/the-forge-codes-settings-mobile.webp"
+            alt="The Forge codes menu on mobile device showing the codes input field highlighted for touch screen redemption"
+            width={800}
+            height={450}
+            className="w-full object-cover"
+          />
+          <p className="bg-indigo-50/60 px-4 py-2 text-xs text-slate-600 dark:bg-indigo-950/30 dark:text-slate-400">
+            Mobile: Tap Settings and enter your code
+          </p>
+        </div>
       </div>
     </section>
   );
