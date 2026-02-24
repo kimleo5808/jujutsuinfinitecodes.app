@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
+import { CopyCodeButton } from "@/components/CopyCodeButton";
 
 const latestSnapshot = jujutsuRecentSnapshots[0];
 const latestActivePreview = (latestSnapshot?.activeCodes ?? []).slice(0, 8);
@@ -216,17 +217,17 @@ export default async function HomeComponent() {
               {latestActivePreview.map((item) => (
                 <div
                   key={item.code}
-                  className="group rounded-xl border border-slate-100 bg-slate-50/50 p-4 transition-all hover:-translate-y-0.5 hover:border-violet-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/50 dark:hover:border-violet-800"
+                  className="group relative overflow-hidden rounded-xl border border-violet-100 bg-gradient-to-br from-white to-violet-50/30 shadow-sm transition-all hover:border-violet-300 hover:shadow-md dark:border-violet-900/40 dark:from-slate-900 dark:to-violet-950/20 dark:hover:border-violet-700"
                 >
-                  <div className="flex items-center gap-2">
-                    <CircleDot className="h-3 w-3 text-emerald-500" />
-                    <p className="font-mono text-sm font-bold text-violet-700 dark:text-violet-300">
-                      {item.code}
-                    </p>
+                  <div className="flex items-center justify-between p-4">
+                    <div className="flex items-center gap-2 flex-1 min-w-0">
+                      <CircleDot className="h-4 w-4 flex-shrink-0 text-green-500" />
+                      <p className="font-mono text-xl font-bold uppercase tracking-wide text-violet-700 dark:text-violet-300 truncate">
+                        {item.code}
+                      </p>
+                    </div>
+                    <CopyCodeButton code={item.code} />
                   </div>
-                  <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
-                    {item.reward}
-                  </p>
                 </div>
               ))}
             </div>
