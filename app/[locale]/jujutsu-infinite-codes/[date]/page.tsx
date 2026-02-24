@@ -13,6 +13,7 @@ import { CheckCircle2, ChevronDown, CircleX } from "lucide-react";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { CopyCodeButton } from "@/components/CopyCodeButton";
 
 type Params = Promise<{
   locale: string;
@@ -108,35 +109,57 @@ function CodeList({
       <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         {title}
       </h2>
-      <ul className="mt-4 grid gap-3">
+      <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {codes.map((item) => (
-          <li
+          <div
             key={item.code}
-            className={`rounded-xl border p-4 ${
+            className={`group relative overflow-hidden rounded-xl border shadow-sm transition-all hover:shadow-md ${
               item.status === "active"
-                ? "border-emerald-200 bg-emerald-50/40 dark:border-emerald-900/50 dark:bg-emerald-900/10"
-                : "border-violet-100 dark:border-violet-900/50"
+                ? "border-green-200 bg-gradient-to-br from-white to-green-50/30 hover:border-green-300 dark:border-green-900/40 dark:from-slate-900 dark:to-green-950/20 dark:hover:border-green-700"
+                : "border-slate-200 bg-gradient-to-br from-white to-slate-50/30 hover:border-slate-300 dark:border-slate-800 dark:from-slate-900 dark:to-slate-800/20 dark:hover:border-slate-700"
             }`}
           >
-            <div className="flex items-center gap-2">
-              {item.status === "active" ? (
-                <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-              ) : (
-                <CircleX className="h-4 w-4 text-rose-400" />
-              )}
-              <p className="font-mono font-semibold text-violet-700 dark:text-violet-300">
-                {item.code}
+            <div className="p-4">
+              {/* Code and Copy Button */}
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <div className="flex-1 min-w-0">
+                  <p className="font-mono text-2xl font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 break-all">
+                    {item.code}
+                  </p>
+                </div>
+                <CopyCodeButton code={item.code} />
+              </div>
+
+              {/* Divider */}
+              <div className="h-px bg-gradient-to-r from-violet-200 via-violet-300 to-violet-200 dark:from-violet-900 dark:via-violet-800 dark:to-violet-900 mb-3" />
+
+              {/* Status */}
+              <div className="flex items-center gap-2 mb-2">
+                {item.status === "active" ? (
+                  <>
+                    <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-green-600 dark:text-green-400" />
+                    <span className="text-sm font-semibold text-green-700 dark:text-green-300">
+                      Active
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <CircleX className="h-4 w-4 flex-shrink-0 text-red-500 dark:text-red-400" />
+                    <span className="text-sm font-semibold text-red-600 dark:text-red-400">
+                      Expired
+                    </span>
+                  </>
+                )}
+              </div>
+
+              {/* Last Tested */}
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                {item.lastTested}
               </p>
             </div>
-            <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
-              {item.reward}
-            </p>
-            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              {item.lastTested} · {item.source}
-            </p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
