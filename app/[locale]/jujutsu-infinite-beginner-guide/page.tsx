@@ -15,7 +15,7 @@ import {
   AlertCircle,
   CheckCircle,
   XCircle,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 
 type Params = Promise<{ locale: string }>;
@@ -47,7 +47,62 @@ export async function generateMetadata({
   });
 }
 
-export default async function BeginnerGuidePage({ params }: { params: Params }) {
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                           */
+/* ------------------------------------------------------------------ */
+
+function StepHeader({
+  step,
+  icon: Icon,
+  title,
+}: {
+  step: number;
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+}) {
+  return (
+    <div className="mb-6 flex items-center gap-3">
+      <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
+        {step}
+      </div>
+      <Icon className="size-8 text-violet-500" />
+      <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
+        {title}
+      </h2>
+    </div>
+  );
+}
+
+function InfoCard({ title, content }: { title: string; content: string }) {
+  return (
+    <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
+      <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
+        {title}
+      </h3>
+      <p className="text-sm text-slate-600 dark:text-slate-400">{content}</p>
+    </div>
+  );
+}
+
+function TipCard({ title, content }: { title: string; content: string }) {
+  return (
+    <div className="rounded-lg bg-violet-50 p-4 dark:bg-violet-900/20">
+      <p className="text-sm font-medium text-violet-800 dark:text-violet-300">
+        <span className="font-bold">{title}:</span> {content}
+      </p>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Page                                                              */
+/* ------------------------------------------------------------------ */
+
+export default async function BeginnerGuidePage({
+  params,
+}: {
+  params: Params;
+}) {
   const { locale } = await params;
   const t = await getTranslations("BeginnerGuide");
 
@@ -55,16 +110,21 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
       <JsonLd
         data={articleSchema({
-          title: "Jujutsu Infinite Beginner Guide 2026 - Complete Starter Tutorial",
-          description: "Complete beginner's guide to Jujutsu Infinite. Learn how to start, redeem codes, get your first technique, level up fast, and avoid common mistakes.",
+          title:
+            "Jujutsu Infinite Beginner Guide 2026 - Complete Starter Tutorial",
+          description:
+            "Complete beginner's guide to Jujutsu Infinite. Learn how to start, redeem codes, get your first technique, level up fast, and avoid common mistakes.",
           url: `${BASE_URL}/jujutsu-infinite-beginner-guide`,
-          datePublished: new Date().toISOString()
+          datePublished: new Date().toISOString(),
         })}
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: BASE_URL },
-          { name: "Beginner Guide", url: `${BASE_URL}/jujutsu-infinite-beginner-guide` },
+          {
+            name: "Beginner Guide",
+            url: `${BASE_URL}/jujutsu-infinite-beginner-guide`,
+          },
         ])}
       />
 
@@ -86,14 +146,16 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           {t("progressSteps.title")}
         </h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            { icon: Download, key: "installation", step: 1 },
-            { icon: PlayCircle, key: "tutorial", step: 2 },
-            { icon: Gift, key: "codes", step: 3 },
-            { icon: Sparkles, key: "firstSpin", step: 4 },
-            { icon: TrendingUp, key: "leveling", step: 5 },
-            { icon: Users, key: "community", step: 6 },
-          ].map(({ icon: Icon, key, step }) => (
+          {(
+            [
+              { icon: Download, key: "installation", step: 1 },
+              { icon: PlayCircle, key: "tutorial", step: 2 },
+              { icon: Gift, key: "codes", step: 3 },
+              { icon: Sparkles, key: "firstSpin", step: 4 },
+              { icon: TrendingUp, key: "leveling", step: 5 },
+              { icon: Users, key: "community", step: 6 },
+            ] as const
+          ).map(({ icon: Icon, key, step }) => (
             <a
               key={key}
               href={`#step${step}`}
@@ -118,48 +180,15 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           id="step1"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              1
-            </div>
-            <Download className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.installation.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={1} icon={Download} title={t("steps.installation.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.installation.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.installation.findGame.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.installation.findGame.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.installation.accountSecurity.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.installation.accountSecurity.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.installation.firstLogin.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.installation.firstLogin.content")}
-                </p>
-              </div>
+              <InfoCard title={t("steps.installation.findGame.title")} content={t("steps.installation.findGame.content")} />
+              <InfoCard title={t("steps.installation.accountSecurity.title")} content={t("steps.installation.accountSecurity.content")} />
+              <InfoCard title={t("steps.installation.firstLogin.title")} content={t("steps.installation.firstLogin.content")} />
             </div>
           </div>
         </section>
@@ -169,108 +198,41 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           id="step2"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              2
-            </div>
-            <PlayCircle className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.tutorial.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={2} icon={PlayCircle} title={t("steps.tutorial.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.tutorial.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.tutorial.basics.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.tutorial.basics.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.tutorial.rewards.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.tutorial.rewards.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-violet-50 p-4 dark:bg-violet-900/20">
-                <p className="text-sm font-medium text-violet-900 dark:text-violet-200">
-                  <AlertCircle className="mr-2 inline size-4" />
-                  {t("steps.tutorial.tip")}
-                </p>
-              </div>
+              <InfoCard title={t("steps.tutorial.controls.title")} content={t("steps.tutorial.controls.content")} />
+              <InfoCard title={t("steps.tutorial.firstBattles.title")} content={t("steps.tutorial.firstBattles.content")} />
+              <InfoCard title={t("steps.tutorial.rewards.title")} content={t("steps.tutorial.rewards.content")} />
             </div>
           </div>
         </section>
 
-        {/* Step 3: Redeem Codes */}
+        {/* Step 3: Codes */}
         <section
           id="step3"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              3
-            </div>
-            <Gift className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.codes.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={3} icon={Gift} title={t("steps.codes.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.codes.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.codes.whyImportant.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.codes.whyImportant.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.codes.howToRedeem.title")}
-                </h3>
-                <ol className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                  <li>{t("steps.codes.howToRedeem.step1")}</li>
-                  <li>{t("steps.codes.howToRedeem.step2")}</li>
-                  <li>{t("steps.codes.howToRedeem.step3")}</li>
-                  <li>{t("steps.codes.howToRedeem.step4")}</li>
-                </ol>
-              </div>
-
-              <div className="rounded-lg border-2 border-violet-200 bg-violet-50 p-4 dark:border-violet-800 dark:bg-violet-900/20">
-                <h3 className="mb-2 font-semibold text-violet-900 dark:text-violet-200">
-                  {t("steps.codes.priority.title")}
-                </h3>
-                <ol className="mt-2 space-y-1 text-sm text-violet-800 dark:text-violet-300">
-                  <li>1. {t("steps.codes.priority.item1")}</li>
-                  <li>2. {t("steps.codes.priority.item2")}</li>
-                  <li>3. {t("steps.codes.priority.item3")}</li>
-                </ol>
-              </div>
-
+              <InfoCard title={t("steps.codes.whyImportant.title")} content={t("steps.codes.whyImportant.content")} />
+              <InfoCard title={t("steps.codes.howToRedeem.title")} content={t("steps.codes.howToRedeem.content")} />
+              <InfoCard title={t("steps.codes.priority.title")} content={t("steps.codes.priority.content")} />
+              <InfoCard title={t("steps.codes.whereToFind.title")} content={t("steps.codes.whereToFind.content")} />
+            </div>
+            <div className="mt-4">
               <Link
                 href="/jujutsu-infinite-codes"
-                className="flex items-center justify-center gap-2 rounded-lg bg-violet-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-violet-700"
+                className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-violet-700"
               >
-                {t("steps.codes.viewCodesButton")}
+                {t("relatedLinks.liveCodes.title")}
                 <ArrowRight className="size-4" />
               </Link>
             </div>
@@ -282,48 +244,16 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           id="step4"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              4
-            </div>
-            <Sparkles className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.firstSpin.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={4} icon={Sparkles} title={t("steps.firstSpin.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.firstSpin.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.firstSpin.whenToSpin.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.firstSpin.whenToSpin.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.firstSpin.whatToExpect.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.firstSpin.whatToExpect.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.firstSpin.lowRarity.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.firstSpin.lowRarity.content")}
-                </p>
-              </div>
+              <InfoCard title={t("steps.firstSpin.whenToSpin.title")} content={t("steps.firstSpin.whenToSpin.content")} />
+              <InfoCard title={t("steps.firstSpin.whatToAimFor.title")} content={t("steps.firstSpin.whatToAimFor.content")} />
+              <InfoCard title={t("steps.firstSpin.badLuck.title")} content={t("steps.firstSpin.badLuck.content")} />
+              <InfoCard title={t("steps.firstSpin.goodLuck.title")} content={t("steps.firstSpin.goodLuck.content")} />
             </div>
           </div>
         </section>
@@ -333,55 +263,16 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           id="step5"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              5
-            </div>
-            <TrendingUp className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.leveling.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={5} icon={TrendingUp} title={t("steps.leveling.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.leveling.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.leveling.bestLocations.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.leveling.bestLocations.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.leveling.quests.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.leveling.quests.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.leveling.pvp.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.leveling.pvp.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-violet-50 p-4 dark:bg-violet-900/20">
-                <p className="text-sm font-medium text-violet-900 dark:text-violet-200">
-                  <AlertCircle className="mr-2 inline size-4" />
-                  {t("steps.leveling.tip")}
-                </p>
-              </div>
+              <InfoCard title={t("steps.leveling.bestQuests.title")} content={t("steps.leveling.bestQuests.content")} />
+              <InfoCard title={t("steps.leveling.farmingSpots.title")} content={t("steps.leveling.farmingSpots.content")} />
+              <InfoCard title={t("steps.leveling.xpBoosts.title")} content={t("steps.leveling.xpBoosts.content")} />
+              <InfoCard title={t("steps.leveling.whenPvP.title")} content={t("steps.leveling.whenPvP.content")} />
             </div>
           </div>
         </section>
@@ -391,74 +282,75 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
           id="step6"
           className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8"
         >
-          <div className="mb-6 flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full bg-violet-100 font-heading text-lg font-bold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">
-              6
-            </div>
-            <Users className="size-8 text-violet-500" />
-            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              {t("steps.community.title")}
-            </h2>
-          </div>
-
+          <StepHeader step={6} icon={Users} title={t("steps.community.title")} />
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-slate-700 dark:text-slate-300">
               {t("steps.community.intro")}
             </p>
-
             <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.community.joinClan.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.community.joinClan.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.community.discord.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.community.discord.content")}
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-violet-100 p-4 dark:border-violet-900/50">
-                <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                  {t("steps.community.resources.title")}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {t("steps.community.resources.content")}
-                </p>
-              </div>
+              <InfoCard title={t("steps.community.discord.title")} content={t("steps.community.discord.content")} />
+              <InfoCard title={t("steps.community.clans.title")} content={t("steps.community.clans.content")} />
+              <InfoCard title={t("steps.community.clanBenefits.title")} content={t("steps.community.clanBenefits.content")} />
+              <InfoCard title={t("steps.community.youtube.title")} content={t("steps.community.youtube.content")} />
             </div>
           </div>
         </section>
 
         {/* Common Mistakes */}
         <section className="rounded-2xl border border-red-100 bg-white p-6 dark:border-red-900/40 dark:bg-slate-950 sm:p-8">
-          <div className="mb-6 flex items-center gap-3">
+          <div className="mb-4 flex items-center gap-3">
             <AlertCircle className="size-8 text-red-500" />
             <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
               {t("mistakes.title")}
             </h2>
           </div>
-
+          <p className="mb-6 text-slate-700 dark:text-slate-300">
+            {t("mistakes.intro")}
+          </p>
           <div className="space-y-4">
-            {[1, 2, 3, 4, 5].map((num) => (
+            {[0, 1, 2, 3, 4, 5].map((i) => (
               <div
-                key={num}
+                key={i}
                 className="flex gap-3 rounded-lg border border-red-100 p-4 dark:border-red-900/50"
               >
-                <XCircle className="size-5 shrink-0 text-red-500" />
+                <XCircle className="mt-0.5 size-5 shrink-0 text-red-500" />
                 <div>
                   <h3 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
-                    {t(`mistakes.mistake${num}.wrong`)}
+                    {t(`mistakes.list.${i}.mistake`)}
                   </h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400">
-                    {t(`mistakes.mistake${num}.right`)}
+                    {t(`mistakes.list.${i}.why`)}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Pro Tips */}
+        <section className="rounded-2xl border border-green-100 bg-white p-6 dark:border-green-900/40 dark:bg-slate-950 sm:p-8">
+          <div className="mb-4 flex items-center gap-3">
+            <CheckCircle className="size-8 text-green-500" />
+            <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
+              {t("tips.title")}
+            </h2>
+          </div>
+          <p className="mb-6 text-slate-700 dark:text-slate-300">
+            {t("tips.intro")}
+          </p>
+          <div className="space-y-4">
+            {[0, 1, 2, 3, 4, 5].map((i) => (
+              <div
+                key={i}
+                className="flex gap-3 rounded-lg border border-green-100 p-4 dark:border-green-900/50"
+              >
+                <CheckCircle className="mt-0.5 size-5 shrink-0 text-green-500" />
+                <div>
+                  <h3 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
+                    {t(`tips.list.${i}.tip`)}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    {t(`tips.list.${i}.why`)}
                   </p>
                 </div>
               </div>
@@ -467,52 +359,75 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
         </section>
 
         {/* Next Steps */}
-        <section className="rounded-2xl border border-green-100 bg-white p-6 dark:border-green-900/40 dark:bg-slate-950 sm:p-8">
-          <div className="mb-6 flex items-center gap-3">
-            <CheckCircle className="size-8 text-green-500" />
+        <section className="rounded-2xl border border-violet-100 bg-white p-6 dark:border-violet-900/40 dark:bg-slate-950 sm:p-8">
+          <div className="mb-4 flex items-center gap-3">
+            <ArrowRight className="size-8 text-violet-500" />
             <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
               {t("nextSteps.title")}
             </h2>
           </div>
-
           <p className="mb-6 text-slate-700 dark:text-slate-300">
-            {t("nextSteps.description")}
+            {t("nextSteps.intro")}
           </p>
+          <ul className="mb-8 space-y-2">
+            {[0, 1, 2, 3, 4, 5].map((i) => (
+              <li
+                key={i}
+                className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300"
+              >
+                <CheckCircle className="mt-0.5 size-4 shrink-0 text-violet-500" />
+                {t(`nextSteps.goals.${i}`)}
+              </li>
+            ))}
+          </ul>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          {/* Related Links */}
+          <h3 className="mb-4 font-heading text-lg font-bold text-slate-900 dark:text-slate-100">
+            {t("relatedLinks.title")}
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2">
             <Link
               href="/jujutsu-infinite-codes"
               className="rounded-lg border border-violet-200 p-4 transition-colors hover:bg-violet-50 dark:border-violet-800 dark:hover:bg-violet-900/20"
             >
-              <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                {t("nextSteps.liveCodes.title")}
-              </h3>
+              <h4 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
+                {t("relatedLinks.liveCodes.title")}
+              </h4>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                {t("nextSteps.liveCodes.description")}
+                {t("relatedLinks.liveCodes.description")}
               </p>
             </Link>
-
+            <Link
+              href="/how-to-redeem-jujutsu-infinite-codes"
+              className="rounded-lg border border-violet-200 p-4 transition-colors hover:bg-violet-50 dark:border-violet-800 dark:hover:bg-violet-900/20"
+            >
+              <h4 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
+                {t("relatedLinks.redeemGuide.title")}
+              </h4>
+              <p className="text-sm text-slate-600 dark:text-slate-400">
+                {t("relatedLinks.redeemGuide.description")}
+              </p>
+            </Link>
             <Link
               href="/jujutsu-infinite-game-guide"
               className="rounded-lg border border-violet-200 p-4 transition-colors hover:bg-violet-50 dark:border-violet-800 dark:hover:bg-violet-900/20"
             >
-              <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                {t("nextSteps.gameGuide.title")}
-              </h3>
+              <h4 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
+                {t("relatedLinks.gameGuide.title")}
+              </h4>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                {t("nextSteps.gameGuide.description")}
+                {t("relatedLinks.gameGuide.description")}
               </p>
             </Link>
-
             <Link
               href="/jujutsu-infinite-codes-faq"
               className="rounded-lg border border-violet-200 p-4 transition-colors hover:bg-violet-50 dark:border-violet-800 dark:hover:bg-violet-900/20"
             >
-              <h3 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
-                {t("nextSteps.faq.title")}
-              </h3>
+              <h4 className="mb-1 font-semibold text-slate-900 dark:text-slate-100">
+                {t("relatedLinks.faq.title")}
+              </h4>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                {t("nextSteps.faq.description")}
+                {t("relatedLinks.faq.description")}
               </p>
             </Link>
           </div>
