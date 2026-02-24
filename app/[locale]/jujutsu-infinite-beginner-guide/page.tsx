@@ -54,12 +54,12 @@ export default async function BeginnerGuidePage({ params }: { params: Params }) 
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
       <JsonLd
-        data={articleSchema(
-          "Jujutsu Infinite Beginner Guide 2026 - Complete Starter Tutorial",
-          "Complete beginner's guide to Jujutsu Infinite. Learn how to start, redeem codes, get your first technique, level up fast, and avoid common mistakes.",
-          `${BASE_URL}/jujutsu-infinite-beginner-guide`,
-          new Date().toISOString()
-        )}
+        data={articleSchema({
+          title: "Jujutsu Infinite Beginner Guide 2026 - Complete Starter Tutorial",
+          description: "Complete beginner's guide to Jujutsu Infinite. Learn how to start, redeem codes, get your first technique, level up fast, and avoid common mistakes.",
+          url: `${BASE_URL}/jujutsu-infinite-beginner-guide`,
+          datePublished: new Date().toISOString()
+        })}
       />
       <JsonLd
         data={breadcrumbSchema([

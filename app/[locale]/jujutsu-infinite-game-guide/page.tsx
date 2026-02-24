@@ -53,12 +53,12 @@ export default async function GameGuidePage({ params }: { params: Params }) {
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
       <JsonLd
-        data={articleSchema(
-          "Complete Jujutsu Infinite Game Guide 2026",
-          "Comprehensive guide covering game mechanics, techniques, resource optimization, PvP strategies, and how to maximize code rewards in Jujutsu Infinite.",
-          `${BASE_URL}/jujutsu-infinite-game-guide`,
-          new Date().toISOString()
-        )}
+        data={articleSchema({
+          title: "Complete Jujutsu Infinite Game Guide 2026",
+          description: "Comprehensive guide covering game mechanics, techniques, resource optimization, PvP strategies, and how to maximize code rewards in Jujutsu Infinite.",
+          url: `${BASE_URL}/jujutsu-infinite-game-guide`,
+          datePublished: new Date().toISOString()
+        })}
       />
       <JsonLd
         data={breadcrumbSchema([
