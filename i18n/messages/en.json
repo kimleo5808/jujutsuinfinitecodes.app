@@ -52,6 +52,14 @@
           "title": "Guides",
           "links": [
             {
+              "href": "/jujutsu-infinite-beginner-guide",
+              "name": "Beginner Guide"
+            },
+            {
+              "href": "/jujutsu-infinite-game-guide",
+              "name": "Game Guide"
+            },
+            {
               "href": "/how-to-redeem-jujutsu-infinite-codes",
               "name": "How to Redeem"
             },
@@ -408,5 +416,417 @@
     "expiredLabel": "expired",
     "addedLabel": "added",
     "expiredEvents": "expired events"
+  },
+  "GameGuide": {
+    "title": "Complete Jujutsu Infinite Game Guide 2026 - Mechanics, Techniques & Strategies",
+    "description": "Master Jujutsu Infinite with our comprehensive guide covering techniques, cursed energy, resource optimization, PvP strategies, and how to maximize code rewards.",
+    "heading": "Complete Jujutsu Infinite Game Guide",
+    "subheading": "Master game mechanics, optimize resources, and dominate PvP with this comprehensive 2026 guide",
+    "quickNav": {
+      "title": "Quick Navigation",
+      "techniques": "Innate Techniques",
+      "cursedEnergy": "Cursed Energy",
+      "leveling": "Leveling System",
+      "resources": "Resource Management",
+      "combat": "Combat & PvP",
+      "social": "Clans & Social",
+      "events": "Events & Updates"
+    },
+    "sections": {
+      "techniques": {
+        "title": "Innate Techniques System",
+        "intro": "Jujutsu Infinite features a six-tier rarity system that determines your combat power and progression speed. Understanding this system is critical because codes primarily grant Spins, which are your gateway to obtaining powerful techniques.",
+        "raritySystem": {
+          "title": "Understanding the Rarity Tiers",
+          "common": {
+            "name": "Common",
+            "description": "Basic starter abilities with simple movesets. Functional for early-game PvE but quickly outclassed. Drop rate: ~40%"
+          },
+          "uncommon": {
+            "name": "Uncommon",
+            "description": "Slightly improved abilities with better damage scaling. Still considered low-tier for mid-game content. Drop rate: ~30%"
+          },
+          "rare": {
+            "name": "Rare",
+            "description": "Solid mid-game techniques with multi-hit combos and better area damage. Viable through level 30-40. Drop rate: ~18%"
+          },
+          "epic": {
+            "name": "Epic",
+            "description": "Strong techniques with crowd control effects and respectable damage. Competitive in late-game PvP. Drop rate: ~8%"
+          },
+          "legendary": {
+            "name": "Legendary",
+            "description": "Elite-tier techniques with devastating area damage, unique visual effects, and anime-inspired abilities. Drop rate: ~3%"
+          },
+          "mythic": {
+            "name": "Mythic",
+            "description": "The pinnacle of power. Game-changing abilities with special mechanics, invincibility frames, and dominating damage. Drop rate: <1%"
+          }
+        },
+        "spinStrategy": {
+          "title": "Spin Strategy & Code Optimization",
+          "content": "Codes that grant Spins are the most valuable because each Spin is another chance at a Mythic technique. Save Spins for rate-up events (typically during major updates) when Legendary and Mythic drop rates increase by 50-100%. However, if you're a new player with only a Common technique, use your first 10-15 Spins immediately—the power difference is massive."
+        }
+      },
+      "cursedEnergy": {
+        "title": "Cursed Energy (CE) System",
+        "intro": "Your technique is only as strong as the Cursed Energy powering it. CE functions as both your mana pool and damage multiplier.",
+        "mechanics": {
+          "title": "How CE Works",
+          "content": "Base CE starts low and must be trained through specific exercises and quests. Higher CE capacity allows you to use more abilities in succession and increases overall damage output by 10-15% per 100 CE points. Training CE is time-intensive, which is why codes that grant XP boosts or training speed multipliers are incredibly valuable."
+        },
+        "commonMistake": {
+          "title": "Common Mistake",
+          "content": "Many new players focus solely on getting a Mythic technique while ignoring CE training, resulting in a powerful ability they can't use effectively. Balance your progression between technique acquisition and CE development."
+        }
+      },
+      "leveling": {
+        "title": "Leveling & Progression System",
+        "intro": "The level cap determines which content you can access and which techniques you can fully utilize.",
+        "phases": {
+          "early": {
+            "title": "Early Game (Levels 1-20)",
+            "content": "Focus on basic combat training and story quests. Complete the tutorial fully to unlock all game systems. Use any codes for XP boosts immediately to accelerate through this phase."
+          },
+          "mid": {
+            "title": "Mid Game (Levels 20-50)",
+            "content": "Unlocks PvP arenas, clan content, and harder boss raids. Start optimizing your technique choice and CE training. Join an active clan for bonus rewards."
+          },
+          "late": {
+            "title": "Late Game (Level 50+)",
+            "content": "Meta matters here—technique choice, CE optimization, and equipment become critical. Codes that grant XP boosts can cut leveling time by 30-40%."
+          }
+        }
+      },
+      "resources": {
+        "title": "Resource Optimization Strategy",
+        "yenManagement": {
+          "title": "Yen Management",
+          "intro": "Yen is the primary currency for purchasing Spins, equipment, and consumables. Most efficient farming methods ranked:",
+          "methods": [
+            "Boss raids: 500-1000 Yen per 5-10 minutes",
+            "Daily quests: Guaranteed 300-500 Yen per day",
+            "High-level mob grinding: 200-400 Yen per 10 minutes",
+            "Code redemption: Varies, but can grant 5000+ Yen instantly"
+          ],
+          "priority": "Your first 10,000 Yen should go exclusively toward Spins. Once you have a Rare or better technique, start investing in equipment that boosts CE or damage output."
+        },
+        "codePriority": {
+          "title": "Code Reward Prioritization",
+          "intro": "Not all codes are equal. Priority order:",
+          "list": [
+            "Spin codes - Direct path to better techniques",
+            "XP boost codes - Faster leveling = faster progression",
+            "Yen codes - Can be converted to Spins",
+            "Cosmetic codes - Lowest priority unless you're a collector"
+          ]
+        }
+      },
+      "combat": {
+        "title": "Combat & PvP Guide",
+        "comboSystem": {
+          "title": "Combo System",
+          "content": "Every technique has a basic combo structure: light attacks build up to heavy attacks, which can be canceled into special abilities. Mastering animation canceling is the difference between average and elite players. Most techniques have a 3-4 hit optimal combo that maximizes damage per second while minimizing vulnerability windows."
+        },
+        "pvpMeta": {
+          "title": "PvP Meta",
+          "content": "The PvP meta shifts with each major update, but some principles remain constant. Mobility techniques with dash or teleport abilities have inherent advantages. Techniques with crowd control (stuns, slows, knockbacks) are valuable for controlling engagement distance. Pure damage techniques need to be Legendary or Mythic tier to compete with utility-focused Epic techniques."
+        },
+        "topTier": {
+          "title": "Top-Tier PvP Characteristics",
+          "features": [
+            "Fast startup frames",
+            "Good range",
+            "Crowd control effects",
+            "High burst damage or sustained pressure"
+          ]
+        },
+        "domainExpansion": {
+          "title": "Domain Expansion",
+          "content": "If your technique has a Domain Expansion (not all do), it functions as an ultimate ability with a long cooldown. Domains create a zone where your abilities are enhanced and opponents are debuffed. Timing is critical—use it to secure kills in PvP or burst down bosses in PvE. Never waste a Domain on regular mobs."
+        }
+      },
+      "social": {
+        "title": "Social & Clan System",
+        "clanBenefits": {
+          "title": "Clan Benefits",
+          "content": "Joining an active clan provides multiple advantages. Clan quests grant bonus Yen and XP. Clan wars offer exclusive rewards including limited-time cosmetics and currency. Most importantly, active clans share code information immediately—you'll often hear about new codes in clan chat before they hit social media."
+        },
+        "clanRaids": {
+          "title": "Clan Boss Raids",
+          "content": "Weekly events that require coordination. These raids drop the highest Yen rewards in the game and occasionally drop exclusive equipment. Solo players miss out on 20-30% of available weekly rewards by not participating in clan content."
+        },
+        "community": {
+          "title": "Community Resources",
+          "content": "The Jujutsu Infinite community is active on Discord, Reddit, and YouTube. Official announcements come through the game's Discord server and the developer's Twitter/X account. For code hunting, following these channels is essential—codes often expire within 48-72 hours of release."
+        }
+      },
+      "events": {
+        "title": "Update Patterns & Event Calendar",
+        "seasonalEvents": {
+          "title": "Seasonal Events",
+          "content": "The developers run seasonal events tied to anime milestones, holidays, and player count achievements. These events introduce limited-time techniques that cannot be obtained through regular Spins. Event codes are especially valuable because they may grant exclusive cosmetics, event-only currency, or boosted Spin rates. Events typically last 1-2 weeks, and their codes expire when the event ends."
+        },
+        "codePatterns": {
+          "title": "Code Release Patterns",
+          "intro": "Through tracking hundreds of code releases, common patterns emerge. New codes typically drop during:",
+          "patterns": [
+            "Game updates and patches (highest frequency)",
+            "Player count milestones (every 100K likes or visits)",
+            "Seasonal holidays (Christmas, New Year, Halloween)",
+            "Anime episode premieres (when new Jujutsu Kaisen episodes air)",
+            "Developer livestreams (announced on Discord)"
+          ],
+          "tip": "The most generous code drops happen during major game updates when developers want to attract returning players."
+        }
+      }
+    },
+    "relatedLinks": {
+      "title": "Related Resources",
+      "liveCodes": {
+        "title": "Active Codes",
+        "description": "Check all currently working Jujutsu Infinite codes"
+      },
+      "redeemGuide": {
+        "title": "Redemption Guide",
+        "description": "Learn how to redeem codes step-by-step"
+      },
+      "faq": {
+        "title": "FAQ",
+        "description": "Common questions about codes and troubleshooting"
+      }
+    }
+  },
+  "BeginnerGuide": {
+    "title": "Jujutsu Infinite Beginner Guide 2026 - Complete Starter Tutorial",
+    "description": "Complete beginner's guide to Jujutsu Infinite. Learn how to start, redeem codes, get your first technique, level up fast, and avoid common mistakes.",
+    "heading": "Jujutsu Infinite Beginner Guide",
+    "subheading": "Your complete roadmap from installation to your first powerful technique",
+    "progressSteps": {
+      "title": "Your Journey to Success",
+      "installation": "Install Game",
+      "tutorial": "Complete Tutorial",
+      "codes": "Redeem Codes",
+      "firstSpin": "First Spin",
+      "leveling": "Level 1-10",
+      "community": "Join Community"
+    },
+    "steps": {
+      "installation": {
+        "title": "Game Installation & Account Setup",
+        "intro": "Jujutsu Infinite is a Roblox game, so you'll need a Roblox account to play. If you already have Roblox installed, skip to finding the game.",
+        "findGame": {
+          "title": "Finding Jujutsu Infinite",
+          "content": "Open Roblox and use the search bar at the top. Type 'Jujutsu Infinite' and look for the official game with the most players. The game icon typically features characters from Jujutsu Kaisen anime. Click the green Play button to launch the game."
+        },
+        "accountSecurity": {
+          "title": "Account Security Tips",
+          "content": "Enable 2-Step Verification in your Roblox account settings. Never share your password with anyone claiming to offer free Robux or codes. All legitimate codes can be redeemed in-game for free—you never need to pay or provide account details."
+        },
+        "firstLogin": {
+          "title": "First Login Checklist",
+          "content": "When you first load into Jujutsu Infinite, you'll spawn in the starting area. Take a moment to adjust your graphics settings if the game is laggy. Check your ping in the top-right corner—anything under 200ms is playable. If you experience lag, try switching to a less crowded server."
+        }
+      },
+      "tutorial": {
+        "title": "Complete the Tutorial",
+        "intro": "The in-game tutorial teaches you basic controls and combat mechanics. Don't skip it—you'll earn your first rewards and unlock essential game systems.",
+        "controls": {
+          "title": "Basic Controls",
+          "content": "WASD to move, Space to jump, Left Click for basic attacks. Your technique abilities are bound to Q, E, R, and F keys. Press M to open the menu where you'll redeem codes later. The tutorial will walk you through using these controls in combat."
+        },
+        "firstBattles": {
+          "title": "Your First Battles",
+          "content": "The tutorial pits you against weak cursed spirits. Focus on learning the combo system: light attacks (Left Click) build up to heavy attacks, which can be canceled into your technique abilities. Don't worry about dying—the tutorial is forgiving and will respawn you instantly."
+        },
+        "rewards": {
+          "title": "Tutorial Rewards",
+          "content": "Completing the tutorial grants you starter Yen (around 500-1000), some XP, and unlocks the Spin system. You'll also receive a random Common or Uncommon technique to start with. While these aren't powerful, they're enough to begin your journey."
+        }
+      },
+      "codes": {
+        "title": "Redeem All Available Codes Immediately",
+        "intro": "This is the most important step for new players. Codes grant free Spins, Yen, and XP boosts that dramatically accelerate your early progression.",
+        "whyImportant": {
+          "title": "Why Codes Are Critical for Beginners",
+          "content": "Without codes, you'd need to grind for hours to afford your first 10 Spins. With codes, you can get 20-30 Spins immediately, giving you multiple chances at a Rare or better technique. This single step can save you 5-10 hours of grinding."
+        },
+        "howToRedeem": {
+          "title": "How to Redeem Codes",
+          "content": "Press M to open the menu. Look for a Codes or Gift icon (usually on the left side). Click it to open the code redemption panel. Type or paste the code exactly as shown—codes are case-sensitive. Click Redeem and check your inventory for rewards."
+        },
+        "priority": {
+          "title": "Code Redemption Priority",
+          "content": "Redeem codes in this order: 1) Spin codes first (direct path to better techniques), 2) Yen codes second (can buy more Spins), 3) XP boost codes third (faster leveling), 4) Cosmetic codes last (purely visual)."
+        },
+        "whereToFind": {
+          "title": "Where to Find Active Codes",
+          "content": "Check our Live Codes page for all currently working codes. We update it daily with automatic verification. Codes typically expire within 48-72 hours, so check back frequently. Join the official Discord for instant notifications when new codes drop."
+        }
+      },
+      "firstSpin": {
+        "title": "Your First Spin Strategy",
+        "intro": "Now that you have Spins from codes, it's time to get a proper technique. Your strategy depends on what you rolled from the tutorial.",
+        "whenToSpin": {
+          "title": "When to Use Your Spins",
+          "content": "If you have a Common or Uncommon technique from the tutorial, use all your Spins immediately. Don't wait for rate-up events—the power difference between Common and Rare is so massive that it's worth spinning now. If you somehow got a Rare or better from the tutorial, you can save some Spins for future events."
+        },
+        "whatToAimFor": {
+          "title": "What Techniques to Aim For",
+          "content": "Your goal is to get at least a Rare technique. Rare techniques have multi-hit combos and decent damage that will carry you to level 30-40. If you get an Epic or Legendary, you're set for the entire early and mid-game. Mythic techniques are extremely rare (<1% drop rate) so don't expect one, but if you get lucky, you've won the lottery."
+        },
+        "badLuck": {
+          "title": "What If You Get Bad Luck?",
+          "content": "If you use all your Spins and still have Common/Uncommon, don't panic. Focus on completing daily quests to earn more Yen, then buy more Spins. The game is designed to eventually give you something decent. Meanwhile, even a Common technique can clear early-game content if you level up your Cursed Energy."
+        },
+        "goodLuck": {
+          "title": "If You Get a Good Technique",
+          "content": "Congratulations! Now focus on learning your technique's combo patterns. Go to the training area (usually marked on the map) and practice your Q-E-R-F abilities. Learn which abilities combo into each other and which have the longest range. This knowledge is more valuable than the technique itself."
+        }
+      },
+      "leveling": {
+        "title": "Level 1-10 Progression Path",
+        "intro": "Your first 10 levels teach you the game's core loop: quest, fight, level up, get stronger. This section is designed to be fast—you should hit level 10 in 30-60 minutes.",
+        "bestQuests": {
+          "title": "Best Quests for New Players",
+          "content": "Focus on main story quests (marked with yellow exclamation marks). These give the most XP and unlock new areas. Side quests (white exclamation marks) are optional but give decent Yen. Avoid daily quests until level 10—they're designed for higher-level players."
+        },
+        "farmingSpots": {
+          "title": "Best Farming Spots (Levels 1-10)",
+          "content": "The starting area has weak cursed spirits that give 20-50 XP each. Stay here until level 5. At level 5, move to the Forest area (follow the main quest). Enemies here give 80-150 XP. At level 8, you can start doing the Cave dungeon for 200+ XP per enemy."
+        },
+        "xpBoosts": {
+          "title": "Using XP Boost Codes",
+          "content": "If you redeemed XP boost codes earlier, activate them now. XP boosts typically last 30-60 minutes and increase XP gain by 50-100%. Use them while actively grinding, not while AFK. The boost timer only counts down while you're in-game."
+        },
+        "whenPvP": {
+          "title": "When to Start PvP",
+          "content": "Don't enter PvP until level 15-20 minimum. PvP matchmaking doesn't have strict level brackets, so you'll face players with Legendary techniques and maxed Cursed Energy. Focus on PvE until you have a Rare+ technique and understand your combos."
+        }
+      },
+      "community": {
+        "title": "Join Community & Clan",
+        "intro": "Jujutsu Infinite is more fun and rewarding with others. Joining a clan and community gives you access to exclusive content, faster code notifications, and helpful players.",
+        "discord": {
+          "title": "Official Discord Server",
+          "content": "The official Jujutsu Infinite Discord is where developers announce new codes, updates, and events. Join it immediately and enable notifications for the #codes channel. You'll get new codes within minutes of release, often before they spread to other platforms."
+        },
+        "clans": {
+          "title": "Finding a Good Clan",
+          "content": "Clans unlock at level 10. Look for clans marked as 'Beginner Friendly' or 'Active Daily'. Avoid clans that require high levels or specific techniques—you want a clan that helps new players. Good clans share codes in clan chat, run beginner-friendly raids, and answer questions."
+        },
+        "clanBenefits": {
+          "title": "Clan Benefits for Beginners",
+          "content": "Clan quests give 50% more Yen than solo quests. Clan members can help you with difficult bosses. Most importantly, active clans share new codes immediately—you'll often get codes 30-60 minutes before they hit Reddit or YouTube."
+        },
+        "youtube": {
+          "title": "YouTube & Content Creators",
+          "content": "Several YouTubers specialize in Jujutsu Infinite content. They post code videos, technique showcases, and farming guides. Subscribe to 2-3 popular creators for regular updates. However, always verify codes on our site first—YouTube videos can be outdated."
+        }
+      }
+    },
+    "mistakes": {
+      "title": "Common Beginner Mistakes to Avoid",
+      "intro": "Learn from others' mistakes. Avoid these common pitfalls that slow down new players.",
+      "list": [
+        {
+          "icon": "XCircle",
+          "mistake": "Ignoring Code Redemption",
+          "why": "The #1 mistake. Codes can give you 20-30 free Spins worth 3000-4500 Yen. That's 5-10 hours of grinding. Always check for codes before you start grinding."
+        },
+        {
+          "icon": "XCircle",
+          "mistake": "Spending Yen on Cosmetics",
+          "why": "Cosmetics don't make you stronger. Your first 10,000 Yen should go exclusively to Spins. Once you have a Rare+ technique, then you can buy cosmetics."
+        },
+        {
+          "icon": "XCircle",
+          "mistake": "Entering PvP Too Early",
+          "why": "PvP has no level brackets. You'll face level 50+ players with Mythic techniques. Focus on PvE until level 20 minimum, preferably level 30."
+        },
+        {
+          "icon": "XCircle",
+          "mistake": "Not Training Cursed Energy",
+          "why": "Your technique is only as strong as your CE. Even a Mythic technique does poor damage with low CE. Balance technique acquisition with CE training."
+        },
+        {
+          "icon": "XCircle",
+          "mistake": "Playing Solo",
+          "why": "Clans give 50% more rewards and share codes instantly. You're missing out on 20-30% of available content by not joining a clan."
+        },
+        {
+          "icon": "XCircle",
+          "mistake": "Saving Spins for 'Later'",
+          "why": "If you have a Common technique, use your Spins now. The power spike from Common to Rare is massive and will accelerate all your other progression."
+        }
+      ]
+    },
+    "tips": {
+      "title": "Pro Tips for Fast Progression",
+      "intro": "These tips will help you progress faster than 90% of new players.",
+      "list": [
+        {
+          "icon": "CheckCircle",
+          "tip": "Check Codes Daily",
+          "why": "New codes drop 2-3 times per week. Bookmark our Live Codes page and check it every morning. Set a phone reminder if needed."
+        },
+        {
+          "icon": "CheckCircle",
+          "tip": "Complete Daily Quests",
+          "why": "Once you hit level 10, daily quests give guaranteed Yen and XP. They reset every 24 hours. Completing them takes 10-15 minutes and gives 500-800 Yen."
+        },
+        {
+          "icon": "CheckCircle",
+          "tip": "Learn Animation Canceling",
+          "why": "Canceling attack animations into abilities increases your DPS by 30-40%. Practice in the training area until it becomes muscle memory."
+        },
+        {
+          "icon": "CheckCircle",
+          "tip": "Join Boss Raids",
+          "why": "Boss raids give 500-1000 Yen per completion. Join clan raids even if you're low level—your clan will carry you and you still get full rewards."
+        },
+        {
+          "icon": "CheckCircle",
+          "tip": "Use XP Boosts During Grind Sessions",
+          "why": "Don't waste XP boosts while doing quests or AFK. Activate them when you're about to grind mobs for 30-60 minutes straight."
+        },
+        {
+          "icon": "CheckCircle",
+          "tip": "Save Some Spins for Events",
+          "why": "Once you have a Rare+ technique, save 10-15 Spins for rate-up events. During events, Legendary/Mythic drop rates double."
+        }
+      ]
+    },
+    "nextSteps": {
+      "title": "What to Do After Level 10",
+      "intro": "You've completed the beginner phase. Here's what to focus on next:",
+      "goals": [
+        "Reach level 20 to unlock more content and harder quests",
+        "Train your Cursed Energy to at least 500 points",
+        "Join an active clan and participate in clan raids",
+        "Start learning PvP basics in casual matches",
+        "Save Yen for the next rate-up event if you have a Rare+ technique",
+        "Check codes daily—new codes can give you another 10-20 Spins"
+      ]
+    },
+    "relatedLinks": {
+      "title": "Essential Resources for Beginners",
+      "liveCodes": {
+        "title": "Active Codes",
+        "description": "Get all currently working codes updated daily"
+      },
+      "redeemGuide": {
+        "title": "How to Redeem Codes",
+        "description": "Step-by-step visual guide for code redemption"
+      },
+      "gameGuide": {
+        "title": "Complete Game Guide",
+        "description": "Deep dive into techniques, CE, and advanced strategies"
+      },
+      "faq": {
+        "title": "FAQ",
+        "description": "Common questions and troubleshooting"
+      }
+    }
   }
 }
