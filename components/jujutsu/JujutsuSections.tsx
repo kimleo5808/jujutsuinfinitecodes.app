@@ -27,6 +27,7 @@ import {
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import { CopyCodeButton } from "@/components/CopyCodeButton";
 
 /* ------------------------------------------------------------------ */
 /*  Code Table                                                         */
@@ -36,75 +37,67 @@ type CodeTableProps = {
   title: string;
   description: string;
   codes: JujutsuCode[];
-  headers: { code: string; reward: string; status: string; lastTested: string; source: string };
   statusLabels: { active: string; expired: string };
 };
 
-function CodeTable({ title, description, codes, headers, statusLabels }: CodeTableProps) {
+function CodeTable({ title, description, codes, statusLabels }: CodeTableProps) {
   return (
     <section className="w-full rounded-2xl border border-violet-100 bg-white p-6 shadow-sm dark:border-violet-900/40 dark:bg-slate-950">
       <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         {title}
       </h2>
       <p className="mt-2 text-slate-600 dark:text-slate-300">{description}</p>
-      <div className="mt-6 overflow-x-auto">
-        <table className="w-full text-left text-sm">
-          <thead>
-            <tr className="border-b border-violet-100 bg-violet-50/50 dark:border-violet-900/40 dark:bg-violet-950/30">
-              <th className="px-3 py-3 font-semibold">{headers.code}</th>
-              <th className="px-3 py-3 font-semibold">{headers.reward}</th>
-              <th className="px-3 py-3 font-semibold">{headers.status}</th>
-              <th className="px-3 py-3 font-semibold">{headers.lastTested}</th>
-              <th className="px-3 py-3 font-semibold">{headers.source}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {codes.map((item) => (
-              <tr
-                key={item.code}
-                className={`border-b last:border-none ${
-                  item.status === "active"
-                    ? "border-violet-50 dark:border-violet-950"
-                    : "border-slate-100 dark:border-slate-800"
-                }`}
-              >
-                <td className="px-3 py-3 font-mono font-semibold text-violet-700 dark:text-violet-300">
-                  {item.code}
-                </td>
-                <td className="px-3 py-3 text-slate-700 dark:text-slate-300">
-                  {item.reward}
-                  {item.note && (
-                    <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                      {item.note}
-                    </p>
-                  )}
-                </td>
-                <td className="px-3 py-3">
-                  <span
-                    className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium ${
-                      item.status === "active"
-                        ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300"
-                        : "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300"
-                    }`}
-                  >
-                    {item.status === "active" ? (
-                      <CheckCircle2 className="h-3.5 w-3.5" />
-                    ) : (
-                      <CircleX className="h-3.5 w-3.5" />
-                    )}
-                    {item.status === "active" ? statusLabels.active : statusLabels.expired}
-                  </span>
-                </td>
-                <td className="px-3 py-3 text-slate-700 dark:text-slate-300">
-                  {item.lastTested}
-                </td>
-                <td className="px-3 py-3 text-slate-700 dark:text-slate-300">
-                  {item.source}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
+      <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {codes.map((item) => (
+          <div
+            key={item.code}
+            className={`group relative overflow-hidden rounded-xl border shadow-sm transition-all hover:shadow-md ${
+              item.status === "active"
+                ? "border-green-200 bg-gradient-to-br from-white to-green-50/30 hover:border-green-300 dark:border-green-900/40 dark:from-slate-900 dark:to-green-950/20 dark:hover:border-green-700"
+                : "border-slate-200 bg-gradient-to-br from-white to-slate-50/30 hover:border-slate-300 dark:border-slate-800 dark:from-slate-900 dark:to-slate-800/20 dark:hover:border-slate-700"
+            }`}
+          >
+            <div className="p-4">
+              {/* Code and Copy Button */}
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <div className="flex-1 min-w-0">
+                  <p className="font-mono text-2xl font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 break-all">
+                    {item.code}
+                  </p>
+                </div>
+                <CopyCodeButton code={item.code} />
+              </div>
+
+              {/* Divider */}
+              <div className="h-px bg-gradient-to-r from-violet-200 via-violet-300 to-violet-200 dark:from-violet-900 dark:via-violet-800 dark:to-violet-900 mb-3" />
+
+              {/* Status */}
+              <div className="flex items-center gap-2 mb-2">
+                {item.status === "active" ? (
+                  <>
+                    <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-green-600 dark:text-green-400" />
+                    <span className="text-sm font-semibold text-green-700 dark:text-green-300">
+                      {statusLabels.active}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <CircleX className="h-4 w-4 flex-shrink-0 text-red-500 dark:text-red-400" />
+                    <span className="text-sm font-semibold text-red-600 dark:text-red-400">
+                      {statusLabels.expired}
+                    </span>
+                  </>
+                )}
+              </div>
+
+              {/* Last Tested */}
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                {item.lastTested}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
@@ -290,13 +283,6 @@ export async function JujutsuHero() {
 
 export async function JujutsuOverviewSections() {
   const t = await getTranslations("JujutsuInfiniteSections");
-  const headers = {
-    code: t("tableHeaders.code"),
-    reward: t("tableHeaders.reward"),
-    status: t("tableHeaders.status"),
-    lastTested: t("tableHeaders.lastTested"),
-    source: t("tableHeaders.source"),
-  };
   const statusLabels = {
     active: t("statusLabels.active"),
     expired: t("statusLabels.expired"),
@@ -309,7 +295,6 @@ export async function JujutsuOverviewSections() {
           title={t("activeTable.title")}
           description={t("activeTable.description")}
           codes={activeJujutsuCodes}
-          headers={headers}
           statusLabels={statusLabels}
         />
       </div>
@@ -318,7 +303,6 @@ export async function JujutsuOverviewSections() {
         title={t("expiredTable.title")}
         description={t("expiredTable.description")}
         codes={expiredJujutsuCodes}
-        headers={headers}
         statusLabels={statusLabels}
       />
     </div>
