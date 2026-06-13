@@ -45,6 +45,10 @@
             {
               "href": "/jujutsu-infinite-codes-history",
               "name": "历史记录"
+            },
+            {
+              "href": "/blog",
+              "name": "博客"
             }
           ]
         },
