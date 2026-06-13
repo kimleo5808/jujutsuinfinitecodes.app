@@ -1,0 +1,81 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Find Your Perfect Jujutsu Infinite Duo by Zodiac">
+  <defs>
+    <linearGradient id="duo-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05030f"/>
+      <stop offset="0.5" stop-color="#1a1040"/>
+      <stop offset="1" stop-color="#3b1466"/>
+    </linearGradient>
+    <linearGradient id="duo-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="duo-glow" cx="0.8" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#duo-bg)"/>
+  <rect width="1200" height="675" fill="url(#duo-glow)"/>
+
+  <!-- starfield -->
+  <g fill="#e9d5ff">
+    <circle cx="130" cy="95" r="2.2" opacity="0.8"/>
+    <circle cx="330" cy="150" r="1.6" opacity="0.6"/>
+    <circle cx="210" cy="510" r="2" opacity="0.7"/>
+    <circle cx="560" cy="560" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="120" r="2.4" opacity="0.8"/>
+    <circle cx="90" cy="320" r="1.4" opacity="0.5"/>
+    <circle cx="440" cy="80" r="1.8" opacity="0.7"/>
+  </g>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#e9d5ff">JUJUTSU INFINITE · DUO SYNERGY</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">Find Your</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#duo-accent)">Perfect Duo</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#d8c9f0">Team chemistry by zodiac compatibility</text>
+
+  <!-- two charts linked (synastry) -->
+  <g transform="translate(880,310)">
+    <!-- connecting aspect line -->
+    <line x1="-95" y1="0" x2="95" y2="0" stroke="#f0abfc" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+    <!-- left chart -->
+    <g transform="translate(-95,0)">
+      <circle cx="0" cy="0" r="92" fill="#ffffff" fill-opacity="0.04" stroke="#c084fc" stroke-opacity="0.35" stroke-width="2"/>
+      <g stroke="#c084fc" stroke-opacity="0.2" stroke-width="1.5">
+        <line x1="0" y1="-92" x2="0" y2="92"/>
+        <line x1="-92" y1="0" x2="92" y2="0"/>
+        <line x1="-65" y1="-65" x2="65" y2="65"/>
+        <line x1="65" y1="-65" x2="-65" y2="65"/>
+      </g>
+      <g fill="#f0abfc" stroke="#f0abfc" stroke-opacity="0.7" stroke-width="2">
+        <line x1="-48" y1="-30" x2="6" y2="18"/>
+        <line x1="6" y1="18" x2="40" y2="-40"/>
+        <circle cx="-48" cy="-30" r="5"/>
+        <circle cx="6" cy="18" r="6"/>
+        <circle cx="40" cy="-40" r="5"/>
+      </g>
+    </g>
+
+    <!-- right chart -->
+    <g transform="translate(95,0)">
+      <circle cx="0" cy="0" r="92" fill="#ffffff" fill-opacity="0.04" stroke="#a855f7" stroke-opacity="0.4" stroke-width="2"/>
+      <g stroke="#a855f7" stroke-opacity="0.2" stroke-width="1.5">
+        <line x1="0" y1="-92" x2="0" y2="92"/>
+        <line x1="-92" y1="0" x2="92" y2="0"/>
+        <line x1="-65" y1="-65" x2="65" y2="65"/>
+        <line x1="65" y1="-65" x2="-65" y2="65"/>
+      </g>
+      <g fill="#d8b4fe" stroke="#d8b4fe" stroke-opacity="0.7" stroke-width="2">
+        <line x1="48" y1="-22" x2="-10" y2="20"/>
+        <line x1="-10" y1="20" x2="-44" y2="-34"/>
+        <circle cx="48" cy="-22" r="5"/>
+        <circle cx="-10" cy="20" r="6"/>
+        <circle cx="-44" cy="-34" r="5"/>
+      </g>
+    </g>
+
+    <!-- center link node -->
+    <circle cx="0" cy="0" r="13" fill="url(#duo-accent)"/>
+  </g>
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#c084fc">jujutsuinfinitecodes.app</text>
+</svg>
