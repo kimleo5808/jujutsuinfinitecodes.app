@@ -1,0 +1,46 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Make Click-Worthy Thumbnails and Channel Art with AI">
+  <defs>
+    <linearGradient id="th-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0617"/>
+      <stop offset="0.55" stop-color="#1e1145"/>
+      <stop offset="1" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="th-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="th-frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="th-glow" cx="0.78" cy="0.32" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#th-bg)"/>
+  <rect width="1200" height="675" fill="url(#th-glow)"/>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#c4b5fd">JUJUTSU INFINITE · THUMBNAILS</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">Click-Worthy</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#th-accent)">Channel Art</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#cbd5e1">Design thumbnails fast with AI image tools</text>
+
+  <!-- image frame + play + AI sparkles -->
+  <g transform="translate(800,235)">
+    <rect x="0" y="0" width="330" height="200" rx="18" fill="#ffffff" fill-opacity="0.05" stroke="url(#th-frame)" stroke-opacity="0.7" stroke-width="3"/>
+    <!-- mountains/landscape glyph = image -->
+    <path d="M22 175 L120 95 L170 140 L235 75 L308 175 Z" fill="#a78bfa" fill-opacity="0.35"/>
+    <circle cx="92" cy="58" r="20" fill="#c4b5fd" fill-opacity="0.7"/>
+    <!-- play badge -->
+    <circle cx="165" cy="100" r="46" fill="url(#th-accent)"/>
+    <path d="M150 78 L188 100 L150 122 Z" fill="#0b0617"/>
+  </g>
+  <!-- AI sparkles -->
+  <g fill="#e9d5ff">
+    <path d="M1135 250 l8 22 22 8 -22 8 -8 22 -8 -22 -22 -8 22 -8 z" opacity="0.9"/>
+    <path d="M770 200 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" opacity="0.8"/>
+    <path d="M1110 470 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 z" opacity="0.85"/>
+  </g>
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#a78bfa">jujutsuinfinitecodes.app</text>
+</svg>
