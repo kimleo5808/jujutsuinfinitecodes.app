@@ -1,0 +1,58 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How to Record, Convert, and Share Your Clips">
+  <defs>
+    <linearGradient id="clip-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0612"/>
+      <stop offset="0.5" stop-color="#221049"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="clip-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="clip-glow" cx="0.8" cy="0.35" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#clip-bg)"/>
+  <rect width="1200" height="675" fill="url(#clip-glow)"/>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#c7d2fe">JUJUTSU INFINITE · CLIPS</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="82" font-weight="800" fill="#ffffff">Record, Convert</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="82" font-weight="800" fill="url(#clip-accent)">&amp; Share Clips</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#cbd5e1">MKV → MP4 · TikTok · Discord · Shorts</text>
+
+  <!-- film strip + share motif -->
+  <g transform="translate(800,250) rotate(-8)">
+    <rect x="0" y="0" width="320" height="170" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#818cf8" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="26" rx="8" fill="#818cf8" fill-opacity="0.25"/>
+    <rect x="0" y="144" width="320" height="26" rx="8" fill="#818cf8" fill-opacity="0.25"/>
+    <g fill="#c7d2fe" fill-opacity="0.7">
+      <rect x="18" y="6" width="16" height="14" rx="3"/>
+      <rect x="58" y="6" width="16" height="14" rx="3"/>
+      <rect x="98" y="6" width="16" height="14" rx="3"/>
+      <rect x="138" y="6" width="16" height="14" rx="3"/>
+      <rect x="178" y="6" width="16" height="14" rx="3"/>
+      <rect x="218" y="6" width="16" height="14" rx="3"/>
+      <rect x="258" y="6" width="16" height="14" rx="3"/>
+      <rect x="18" y="150" width="16" height="14" rx="3"/>
+      <rect x="58" y="150" width="16" height="14" rx="3"/>
+      <rect x="98" y="150" width="16" height="14" rx="3"/>
+      <rect x="138" y="150" width="16" height="14" rx="3"/>
+      <rect x="178" y="150" width="16" height="14" rx="3"/>
+      <rect x="218" y="150" width="16" height="14" rx="3"/>
+      <rect x="258" y="150" width="16" height="14" rx="3"/>
+    </g>
+    <circle cx="160" cy="85" r="40" fill="url(#clip-accent)"/>
+    <path d="M148 65 L182 85 L148 105 Z" fill="#0a0612"/>
+  </g>
+  <!-- share nodes -->
+  <g transform="translate(1000,480)" stroke="#818cf8" stroke-width="5" fill="#c7d2fe">
+    <line x1="-44" y1="22" x2="6" y2="-30"/>
+    <line x1="-44" y1="22" x2="6" y2="44"/>
+    <circle cx="14" cy="-34" r="15" fill="url(#clip-accent)" stroke="none"/>
+    <circle cx="14" cy="48" r="15" fill="url(#clip-accent)" stroke="none"/>
+    <circle cx="-52" cy="22" r="15" fill="url(#clip-accent)" stroke="none"/>
+  </g>
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#818cf8">jujutsuinfinitecodes.app</text>
+</svg>
