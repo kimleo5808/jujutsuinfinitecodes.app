@@ -1,0 +1,57 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One-Tap Reflex Warmup Games for Jujutsu Infinite Players">
+  <defs>
+    <linearGradient id="rf-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05030f"/>
+      <stop offset="0.5" stop-color="#1a1040"/>
+      <stop offset="1" stop-color="#3b1466"/>
+    </linearGradient>
+    <linearGradient id="rf-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fde047"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="rf-glow" cx="0.8" cy="0.55" r="0.6">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rf-trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#rf-bg)"/>
+  <rect width="1200" height="675" fill="url(#rf-glow)"/>
+
+  <!-- starfield -->
+  <g fill="#e9d5ff">
+    <circle cx="140" cy="90" r="2.2" opacity="0.8"/>
+    <circle cx="360" cy="160" r="1.6" opacity="0.6"/>
+    <circle cx="690" cy="110" r="2.4" opacity="0.8"/>
+    <circle cx="95" cy="330" r="1.4" opacity="0.5"/>
+    <circle cx="455" cy="70" r="1.8" opacity="0.7"/>
+  </g>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#e9d5ff">JUJUTSU INFINITE · REFLEX TRAINING</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">One Tap to</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#rf-accent)">Sharper Timing</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#d8c9f0">Quick reflex warmups between matches</text>
+
+  <!-- drift track + car -->
+  <g transform="translate(820,360)">
+    <!-- zig-zag path -->
+    <path d="M -120 150 L 0 60 L -90 -10 L 60 -90 L -20 -160" fill="none" stroke="#2a1a55" stroke-width="46" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -120 150 L 0 60 L -90 -10 L 60 -90 L -20 -160" fill="none" stroke="#6d28d9" stroke-opacity="0.5" stroke-width="46" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 22"/>
+    <!-- drift trail -->
+    <path d="M 60 -90 L -20 -160" fill="none" stroke="url(#rf-trail)" stroke-width="10" stroke-linecap="round"/>
+    <!-- car (drifting block) -->
+    <g transform="translate(20,-128) rotate(-32)">
+      <rect x="-26" y="-16" width="52" height="32" rx="7" fill="url(#rf-accent)"/>
+      <rect x="-12" y="-11" width="20" height="22" rx="4" fill="#1a1040"/>
+      <rect x="-30" y="-22" width="12" height="9" rx="3" fill="#0f0a25"/>
+      <rect x="-30" y="13" width="12" height="9" rx="3" fill="#0f0a25"/>
+      <rect x="18" y="-22" width="12" height="9" rx="3" fill="#0f0a25"/>
+      <rect x="18" y="13" width="12" height="9" rx="3" fill="#0f0a25"/>
+    </g>
+  </g>
+
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#c084fc">jujutsuinfinitecodes.app</text>
+</svg>

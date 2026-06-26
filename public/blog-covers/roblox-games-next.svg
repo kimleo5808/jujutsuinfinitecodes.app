@@ -1,0 +1,66 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Roblox Games to Try If You Love Jujutsu Infinite">
+  <defs>
+    <linearGradient id="rg-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05030f"/>
+      <stop offset="0.5" stop-color="#1a1040"/>
+      <stop offset="1" stop-color="#3b1466"/>
+    </linearGradient>
+    <linearGradient id="rg-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="rg-glow" cx="0.82" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#rg-bg)"/>
+  <rect width="1200" height="675" fill="url(#rg-glow)"/>
+
+  <!-- starfield -->
+  <g fill="#e9d5ff">
+    <circle cx="140" cy="90" r="2.2" opacity="0.8"/>
+    <circle cx="360" cy="160" r="1.6" opacity="0.6"/>
+    <circle cx="220" cy="520" r="2" opacity="0.7"/>
+    <circle cx="690" cy="110" r="2.4" opacity="0.8"/>
+    <circle cx="95" cy="330" r="1.4" opacity="0.5"/>
+    <circle cx="455" cy="70" r="1.8" opacity="0.7"/>
+  </g>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#e9d5ff">JUJUTSU INFINITE · WHAT TO PLAY NEXT</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">More Roblox</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#rg-accent)">Games to Grind</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#d8c9f0">If you love Jujutsu Infinite, try these</text>
+
+  <!-- stacked game cards -->
+  <g transform="translate(890,330)">
+    <!-- back card -->
+    <g transform="translate(40,-30) rotate(8)">
+      <rect x="-95" y="-115" width="190" height="230" rx="20" fill="#2a1a55" stroke="#6d28d9" stroke-opacity="0.5" stroke-width="2"/>
+    </g>
+    <!-- middle card -->
+    <g transform="translate(-30,10) rotate(-7)">
+      <rect x="-95" y="-115" width="190" height="230" rx="20" fill="#3b1466" stroke="#a855f7" stroke-opacity="0.5" stroke-width="2"/>
+    </g>
+    <!-- front card -->
+    <g>
+      <rect x="-100" y="-120" width="200" height="240" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="url(#rg-accent)" stroke-width="3"/>
+      <!-- play triangle -->
+      <circle cx="0" cy="-30" r="46" fill="url(#rg-accent)" fill-opacity="0.18" stroke="url(#rg-accent)" stroke-width="2.5"/>
+      <path d="M -16 -50 L 22 -30 L -16 -10 Z" fill="url(#rg-accent)"/>
+      <!-- title bars -->
+      <rect x="-66" y="44" width="132" height="14" rx="7" fill="#e9d5ff" fill-opacity="0.85"/>
+      <rect x="-66" y="70" width="92" height="11" rx="5.5" fill="#c084fc" fill-opacity="0.7"/>
+      <!-- stars -->
+      <g fill="#fde047" transform="translate(-46,98)">
+        <circle cx="0" cy="0" r="5"/>
+        <circle cx="20" cy="0" r="5"/>
+        <circle cx="40" cy="0" r="5"/>
+        <circle cx="60" cy="0" r="5"/>
+        <circle cx="80" cy="0" r="5" fill-opacity="0.4"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#c084fc">jujutsuinfinitecodes.app</text>
+</svg>

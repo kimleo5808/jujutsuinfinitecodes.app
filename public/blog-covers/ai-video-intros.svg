@@ -1,0 +1,65 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Video Intros and Shorts for Jujutsu Infinite Content">
+  <defs>
+    <linearGradient id="iv-bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05030f"/>
+      <stop offset="0.5" stop-color="#2a0f3f"/>
+      <stop offset="1" stop-color="#5b1466"/>
+    </linearGradient>
+    <linearGradient id="iv-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9a8d4"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="iv-glow" cx="0.82" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#d946ef" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#d946ef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#iv-bg)"/>
+  <rect width="1200" height="675" fill="url(#iv-glow)"/>
+
+  <!-- starfield -->
+  <g fill="#fbe9ff">
+    <circle cx="140" cy="90" r="2.2" opacity="0.8"/>
+    <circle cx="360" cy="160" r="1.6" opacity="0.6"/>
+    <circle cx="220" cy="520" r="2" opacity="0.7"/>
+    <circle cx="690" cy="110" r="2.4" opacity="0.8"/>
+    <circle cx="95" cy="330" r="1.4" opacity="0.5"/>
+    <circle cx="455" cy="70" r="1.8" opacity="0.7"/>
+  </g>
+
+  <text x="80" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="6" font-weight="700" fill="#fbe9ff">JUJUTSU INFINITE · CONTENT CREATION</text>
+  <text x="80" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">From Text to</text>
+  <text x="80" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#iv-accent)">Scroll-Stopping Video</text>
+  <text x="82" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="400" fill="#ecd6f5">AI intros, hooks &amp; loops for your clips</text>
+
+  <!-- film frame + play -->
+  <g transform="translate(900,330)">
+    <!-- film strip -->
+    <rect x="-140" y="-105" width="280" height="210" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="url(#iv-accent)" stroke-width="3"/>
+    <!-- sprocket holes -->
+    <g fill="#1a1040" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.5">
+      <rect x="-128" y="-95" width="20" height="16" rx="3"/>
+      <rect x="-128" y="-55" width="20" height="16" rx="3"/>
+      <rect x="-128" y="-15" width="20" height="16" rx="3"/>
+      <rect x="-128" y="25"  width="20" height="16" rx="3"/>
+      <rect x="-128" y="65"  width="20" height="16" rx="3"/>
+      <rect x="108" y="-95" width="20" height="16" rx="3"/>
+      <rect x="108" y="-55" width="20" height="16" rx="3"/>
+      <rect x="108" y="-15" width="20" height="16" rx="3"/>
+      <rect x="108" y="25"  width="20" height="16" rx="3"/>
+      <rect x="108" y="65"  width="20" height="16" rx="3"/>
+    </g>
+    <!-- play button -->
+    <circle cx="0" cy="0" r="52" fill="url(#iv-accent)" fill-opacity="0.18" stroke="url(#iv-accent)" stroke-width="3"/>
+    <path d="M -18 -28 L 30 0 L -18 28 Z" fill="url(#iv-accent)"/>
+  </g>
+
+  <!-- motion streaks -->
+  <g stroke="url(#iv-accent)" stroke-linecap="round" opacity="0.7">
+    <line x1="690" y1="300" x2="735" y2="300" stroke-width="6"/>
+    <line x1="700" y1="340" x2="730" y2="340" stroke-width="5"/>
+    <line x1="695" y1="380" x2="740" y2="380" stroke-width="6"/>
+  </g>
+
+  <text x="80" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#d8b4fe">jujutsuinfinitecodes.app</text>
+</svg>
